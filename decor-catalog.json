@@ -1,0 +1,602 @@
+[
+  {
+    "code": "DSPI-17-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-001.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-19-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-002.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-22-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-003.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-20-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-004.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-26-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-005.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-06-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-006.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-07-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-007.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-08-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-008.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-09-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-009.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-05-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-010.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-10-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-011.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-00-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-012.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-01-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-013.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-02-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-014.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-03-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-015.webp",
+    "page": 11
+  },
+  {
+    "code": "DSPI-04-407",
+    "family": "Painted wood",
+    "image": "decor-assets/swatch-016.webp",
+    "page": 11
+  },
+  {
+    "code": "DWPI-01",
+    "family": "Wood",
+    "image": "decor-assets/swatch-017.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-02-204",
+    "family": "Wood",
+    "image": "decor-assets/swatch-018.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-03-204",
+    "family": "Wood",
+    "image": "decor-assets/swatch-019.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-04-204",
+    "family": "Wood",
+    "image": "decor-assets/swatch-020.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-05-204",
+    "family": "Wood",
+    "image": "decor-assets/swatch-021.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-07-403",
+    "family": "Wood",
+    "image": "decor-assets/swatch-022.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-08-403",
+    "family": "Wood",
+    "image": "decor-assets/swatch-023.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-09-403",
+    "family": "Wood",
+    "image": "decor-assets/swatch-024.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-10-4032",
+    "family": "Wood",
+    "image": "decor-assets/swatch-025.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-11-808",
+    "family": "Wood",
+    "image": "decor-assets/swatch-026.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-06-204",
+    "family": "Wood",
+    "image": "decor-assets/swatch-027.webp",
+    "page": 12
+  },
+  {
+    "code": "DWPI-12-204",
+    "family": "Wood",
+    "image": "decor-assets/swatch-028.webp",
+    "page": 12
+  },
+  {
+    "code": "DSPI-00-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-029.webp",
+    "page": 12
+  },
+  {
+    "code": "DSPI-01-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-030.webp",
+    "page": 12
+  },
+  {
+    "code": "DSPI-02-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-031.webp",
+    "page": 12
+  },
+  {
+    "code": "DSPI-03-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-032.webp",
+    "page": 12
+  },
+  {
+    "code": "DSPI-04-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-033.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-09-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-034.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-06-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-035.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-07-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-036.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-08-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-037.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-05-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-038.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-27-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-039.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-11-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-040.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-12-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-041.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-13-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-042.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-13-LE03",
+    "family": "Solid",
+    "image": "decor-assets/swatch-043.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-28-LE03",
+    "family": "Solid",
+    "image": "decor-assets/swatch-044.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-14-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-045.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-17-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-046.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-19-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-047.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-20-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-048.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-21-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-049.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-15-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-050.webp",
+    "page": 13
+  },
+  {
+    "code": "DSPI-22-LE03",
+    "family": "Solid",
+    "image": "decor-assets/swatch-051.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-23-LE03",
+    "family": "Solid",
+    "image": "decor-assets/swatch-052.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-23-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-053.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-24-LE03",
+    "family": "Solid",
+    "image": "decor-assets/swatch-054.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-25-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-055.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-26-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-056.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-22-102",
+    "family": "Solid",
+    "image": "decor-assets/swatch-057.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-27-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-058.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-20-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-059.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-25-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-060.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-17-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-061.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-03-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-062.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-22-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-063.webp",
+    "page": 14
+  },
+  {
+    "code": "DWPI-05-100",
+    "family": "Wood",
+    "image": "decor-assets/swatch-064.webp",
+    "page": 14
+  },
+  {
+    "code": "DSPI-26-100",
+    "family": "Super matte",
+    "image": "decor-assets/swatch-065.webp",
+    "page": 14
+  },
+  {
+    "code": "DMPI-06-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-066.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-07-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-067.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-08-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-068.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-11-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-069.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-04-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-070.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-05-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-071.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-03-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-072.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-01-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-073.webp",
+    "page": 15
+  },
+  {
+    "code": "DMPI-02-102",
+    "family": "Stone",
+    "image": "decor-assets/swatch-074.webp",
+    "page": 15
+  },
+  {
+    "code": "DFPI-01-LE03",
+    "family": "Fabric",
+    "image": "decor-assets/swatch-075.webp",
+    "page": 15
+  },
+  {
+    "code": "DFPI-02-LE03",
+    "family": "Fabric",
+    "image": "decor-assets/swatch-076.webp",
+    "page": 15
+  },
+  {
+    "code": "DMP-06",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-077.webp",
+    "page": 17
+  },
+  {
+    "code": "DFP-12",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-078.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-07",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-079.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-13",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-080.webp",
+    "page": 17
+  },
+  {
+    "code": "DWP-01",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-081.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-08",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-082.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-14",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-083.webp",
+    "page": 17
+  },
+  {
+    "code": "DWP-02",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-084.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-09",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-085.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-15",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-086.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-03",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-087.webp",
+    "page": 17
+  },
+  {
+    "code": "DFP-10",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-088.webp",
+    "page": 17
+  },
+  {
+    "code": "DWP-16",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-089.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-04",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-090.webp",
+    "page": 17
+  },
+  {
+    "code": "DFP-11",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-091.webp",
+    "page": 17
+  },
+  {
+    "code": "DSD-17",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-092.webp",
+    "page": 17
+  },
+  {
+    "code": "DMP-05",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-093.webp",
+    "page": 17
+  },
+  {
+    "code": "DSD-18",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-094.webp",
+    "page": 18
+  },
+  {
+    "code": "DSD-19",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-095.webp",
+    "page": 18
+  },
+  {
+    "code": "DSD-20",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-096.webp",
+    "page": 18
+  },
+  {
+    "code": "DSD-21",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-097.webp",
+    "page": 18
+  },
+  {
+    "code": "DSD-22",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-098.webp",
+    "page": 18
+  },
+  {
+    "code": "DSD-23",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-099.webp",
+    "page": 18
+  },
+  {
+    "code": "DSD-24",
+    "family": "Exterior",
+    "image": "decor-assets/swatch-100.webp",
+    "page": 18
+  }
+]

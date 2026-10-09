@@ -1,0 +1,572 @@
+[
+  {
+    "id": 1,
+    "category": "Home",
+    "title": "Living room to dining room",
+    "intro": "A folding table and movable storage create a dining setting without rebuilding the room.",
+    "mechanism": "Furniture deployment and movable modules",
+    "decorative_role": "Durable, coordinated faces on table storage and cabinetry",
+    "review": "Check hinges, load ratings, chair storage and clear circulation.",
+    "before": [
+      "Seating",
+      "Closed storage",
+      "Open floor"
+    ],
+    "after": [
+      "Dining table",
+      "Serving storage",
+      "Walkway"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Home",
+    "title": "Living room to kitchen studio",
+    "intro": "A contained cooking pod can define a cooking zone in a multi-use room.",
+    "mechanism": "A serviced kitchen pod, ventilation and approved utilities",
+    "decorative_role": "Replaceable pod doors and side panels",
+    "review": "Water, drainage, electrical capacity, heat separation and ventilation need professional design. A finish cannot create these services.",
+    "before": [
+      "Lounge",
+      "Storage wall",
+      "Open floor"
+    ],
+    "after": [
+      "Cooking pod",
+      "Ventilated zone",
+      "Family seating"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Home",
+    "title": "Kitchen zone to sleeping zone",
+    "intro": "A closed kitchen module and separate fold-down sleeping unit create a different room mode.",
+    "mechanism": "Isolated kitchen module plus convertible furniture",
+    "decorative_role": "Coordinated cabinetry skins across both modes",
+    "review": "Cooking must be safely isolated; utilities, ventilation, clearances and local requirements must be resolved.",
+    "before": [
+      "Open kitchen",
+      "Dining table",
+      "Clear route"
+    ],
+    "after": [
+      "Closed kitchen",
+      "Sleeping unit",
+      "Clear route"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Home",
+    "title": "Glass to privacy wall",
+    "intro": "A transparent partition can become visually opaque when a separate privacy-glazing system changes state.",
+    "mechanism": "Switchable glazing and its controls",
+    "decorative_role": "Compatible adjacent frames and opaque decorative panels",
+    "review": "Glass design, power, control safety and privacy performance are separate from architectural film.",
+    "before": [
+      "Clear glass",
+      "Shared view",
+      "Open visual link"
+    ],
+    "after": [
+      "Opaque glass",
+      "Private view",
+      "Separate zone"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Home",
+    "title": "Wall to television",
+    "intro": "A display is integrated within a wall so the surface alternates between calm background and media.",
+    "mechanism": "Display hardware, power, ventilation and controls",
+    "decorative_role": "Coordinated surround and accessible service panels",
+    "review": "Do not enclose ventilation or cover equipment access. A decorative sheet alone does not become a screen.",
+    "before": [
+      "Quiet wall",
+      "Closed cabinet",
+      "Seating"
+    ],
+    "after": [
+      "Display wall",
+      "Service access",
+      "Media seating"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Home",
+    "title": "A room changes its surface wardrobe",
+    "intro": "Mechanically attached decorative facings can be exchanged for a different atmosphere.",
+    "mechanism": "Replaceable facing panels and compatible attachment",
+    "decorative_role": "Seasonal colour and texture selection",
+    "review": "Removal depends on the attachment and substrate. Standard bonded films are not assumed to peel cleanly or be indefinitely reusable.",
+    "before": [
+      "Oak facing",
+      "Fixed base",
+      "Warm palette"
+    ],
+    "after": [
+      "Blue facing",
+      "Same base",
+      "Cool palette"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Life stages",
+    "title": "Child\u2019s room to guest room",
+    "intro": "Modular storage and reconfigurable furniture let the room support changing household needs.",
+    "mechanism": "Furniture reconfiguration",
+    "decorative_role": "Renewable cabinet and partition faces",
+    "review": "Maintain anchorage, edge protection, circulation and appropriate safety review.",
+    "before": [
+      "Study desk",
+      "Toy storage",
+      "Child bed"
+    ],
+    "after": [
+      "Guest storage",
+      "Work desk",
+      "Guest bed"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Life stages",
+    "title": "Home office to playroom",
+    "intro": "A fold-away desk and organised storage clear the working area after office hours.",
+    "mechanism": "Fold-away furniture and lockable storage",
+    "decorative_role": "Easy-to-maintain decorative storage faces",
+    "review": "Manage power leads, pinch points, storage security and furniture stability.",
+    "before": [
+      "Work desk",
+      "Office storage",
+      "Meeting floor"
+    ],
+    "after": [
+      "Closed desk",
+      "Play storage",
+      "Open play floor"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Life stages",
+    "title": "A clearer route for later life",
+    "intro": "Movable units and coordinated finishes can simplify circulation as mobility needs change.",
+    "mechanism": "Layout adjustment and accessible hardware",
+    "decorative_role": "Contrasting or tactile surface cues where appropriate",
+    "review": "An accessibility professional should review dimensions, stability and individual needs. No medical benefit is promised.",
+    "before": [
+      "Central unit",
+      "Narrow route",
+      "Low contrast"
+    ],
+    "after": [
+      "Edge storage",
+      "Clear route",
+      "Defined edges"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Life stages",
+    "title": "Quiet room to shared room",
+    "intro": "An acoustic partition creates a quieter zone and can reopen for family use.",
+    "mechanism": "An acoustic partition assembly",
+    "decorative_role": "Replaceable decorative faces on the partition",
+    "review": "Acoustic performance comes from the entire assembly, seals and installation, not its appearance.",
+    "before": [
+      "Open room",
+      "Shared sound",
+      "Common zone"
+    ],
+    "after": [
+      "Acoustic screen",
+      "Quiet zone",
+      "Shared zone"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Life stages",
+    "title": "Bedroom daylight to privacy mode",
+    "intro": "Privacy glazing and lighting change the visual relationship between a bedroom and adjoining space.",
+    "mechanism": "Glazing controls and lighting design",
+    "decorative_role": "Soft-toned adjacent panels and cabinet faces",
+    "review": "Confirm glare, privacy, controls and electrical installation; opaque appearance is not structural separation.",
+    "before": [
+      "Daylight mode",
+      "Clear glass",
+      "Bright room"
+    ],
+    "after": [
+      "Privacy mode",
+      "Opaque glass",
+      "Quiet lighting"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Life stages",
+    "title": "Guest suite to work suite",
+    "intro": "A hotel or guest room can include a stowable work setting within its cabinetry.",
+    "mechanism": "Deployable work furniture",
+    "decorative_role": "Consistent cabinet faces between modes",
+    "review": "Check ergonomics, furniture loading, sockets and housekeeping access.",
+    "before": [
+      "Guest storage",
+      "Closed desk",
+      "Rest setting"
+    ],
+    "after": [
+      "Work setting",
+      "Open desk",
+      "Service access"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Materials",
+    "title": "Cabinet fronts renewed without changing the layout",
+    "intro": "Exchangeable door facings can update a sound cabinet system.",
+    "mechanism": "Door replacement or detachable facing",
+    "decorative_role": "A new finish on a retained base",
+    "review": "Check hinge geometry, door weight, edge details and existing cabinet condition.",
+    "before": [
+      "Original front",
+      "Cabinet base",
+      "Old palette"
+    ],
+    "after": [
+      "New front",
+      "Retained base",
+      "New palette"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Materials",
+    "title": "A kitchen island that moves",
+    "intro": "A properly designed mobile unit can change preparation and dining arrangements.",
+    "mechanism": "Lockable mobile furniture with suitable services",
+    "decorative_role": "Coordinated end panels and storage faces",
+    "review": "A decorative finish does not make plumbing mobile. Check weight, stability, brakes and safe clearances.",
+    "before": [
+      "Fixed dining",
+      "Island parked",
+      "Storage"
+    ],
+    "after": [
+      "Prep setting",
+      "Island deployed",
+      "Clear route"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Materials",
+    "title": "Fa\u00e7ade panels with replaceable outer faces",
+    "intro": "Modular exterior panels can allow selected facing replacement during maintenance.",
+    "mechanism": "Engineered cladding and mechanical fixing",
+    "decorative_role": "Exterior-qualified decorative finish",
+    "review": "Attachment, drainage, wind loading, fire strategy and approvals require project engineering.",
+    "before": [
+      "Weathered face",
+      "Support panel",
+      "Fixed joint"
+    ],
+    "after": [
+      "Renewed face",
+      "Retained support",
+      "Service joint"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Materials",
+    "title": "Acoustic panels with a new visual identity",
+    "intro": "Decorative faces can be selected for an acoustic module without assuming that every skin preserves its performance.",
+    "mechanism": "Qualified acoustic module with reviewed facing",
+    "decorative_role": "Texture and colour for the room scheme",
+    "review": "Any new facing may alter acoustic or fire behaviour; evaluate the complete module.",
+    "before": [
+      "Acoustic base",
+      "Original facing",
+      "Quiet zone"
+    ],
+    "after": [
+      "Reviewed base",
+      "New facing",
+      "Quiet zone"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Materials",
+    "title": "Ceiling panels that coordinate light and finish",
+    "intro": "Modular ceilings can integrate lighting with replaceable decorative components.",
+    "mechanism": "Ceiling support and lighting modules",
+    "decorative_role": "Decorative faces around serviceable lighting",
+    "review": "Check suspended loads, heat, wiring, fire requirements and access above the ceiling.",
+    "before": [
+      "Plain ceiling",
+      "Service void",
+      "Room lighting"
+    ],
+    "after": [
+      "Light modules",
+      "Accessible void",
+      "New finish"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Materials",
+    "title": "A service wall for energy and equipment",
+    "intro": "A modular wall can conceal approved equipment behind serviceable panels.",
+    "mechanism": "An engineered service enclosure",
+    "decorative_role": "Removable decorative doors and access panels",
+    "review": "Do not conceal ventilation or safety access. Battery and electrical systems require their own qualified design.",
+    "before": [
+      "Loose services",
+      "Plain wall",
+      "Visible cables"
+    ],
+    "after": [
+      "Service zone",
+      "Access panels",
+      "Managed cables"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Mobility",
+    "title": "Yacht dining salon to rest setting",
+    "intro": "Convertible seating and tables let a yacht salon change use while keeping a coherent finish palette.",
+    "mechanism": "Marine furniture mechanisms",
+    "decorative_role": "Coordinated cabinetry and bulkhead finishes",
+    "review": "Review locking, vessel movement, loads, emergency routes and vessel requirements.",
+    "before": [
+      "Dining table",
+      "Salon seats",
+      "Clear route"
+    ],
+    "after": [
+      "Stowed table",
+      "Rest setting",
+      "Clear route"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Mobility",
+    "title": "Yacht cabin to compact workspace",
+    "intro": "A fold-away desk can add a work mode without sacrificing cabin storage.",
+    "mechanism": "Marine-approved furniture design",
+    "decorative_role": "Wardrobe, desk surround and wall facings",
+    "review": "Confirm latches, equipment ventilation, clearances and access for maintenance.",
+    "before": [
+      "Cabin storage",
+      "Closed desk",
+      "Berth"
+    ],
+    "after": [
+      "Work desk",
+      "Open storage",
+      "Berth retained"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Mobility",
+    "title": "Ship lining with maintainable service access",
+    "intro": "Panel modules can provide access to services while preserving a consistent interior finish.",
+    "mechanism": "Engineered removable lining panels",
+    "decorative_role": "Matched replacement metal-laminated panels",
+    "review": "Seams, edge protection, fasteners and relevant fire documentation need assembly review.",
+    "before": [
+      "Closed lining",
+      "Hidden service",
+      "Fixed trim"
+    ],
+    "after": [
+      "Access module",
+      "Visible service",
+      "Matched trim"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Mobility",
+    "title": "Car trim with a different tactile character",
+    "intro": "A vehicle interior may use different approved trim assemblies for different design packages.",
+    "mechanism": "Vehicle-specific trim assembly",
+    "decorative_role": "Coordinated colour and tactile surface",
+    "review": "Do not interfere with airbags, controls, sensors or exits. Qualification belongs to the actual part and vehicle programme.",
+    "before": [
+      "Original trim",
+      "Door assembly",
+      "Console"
+    ],
+    "after": [
+      "Approved trim",
+      "Same interface",
+      "New texture"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Mobility",
+    "title": "Rail interior for a different service pattern",
+    "intro": "An operator-led interior redesign can change storage and passenger layout for a different route.",
+    "mechanism": "Qualified seating and rail interior modules",
+    "decorative_role": "Durable coordinated panel finishes",
+    "review": "Seat anchorage, evacuation, access, vibration and rail requirements need full engineering review.",
+    "before": [
+      "Passenger seats",
+      "Small storage",
+      "Service aisle"
+    ],
+    "after": [
+      "New seat plan",
+      "Luggage zone",
+      "Clear aisle"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Mobility",
+    "title": "Aircraft cabin panel appearance renewed",
+    "intro": "A cabin alteration can update approved panel appearance within its certification process.",
+    "mechanism": "Aircraft-specific alteration and approval",
+    "decorative_role": "Decorative finish on the reviewed interior panel",
+    "review": "New finishes require applicable flammability and alteration review; this is not an aircraft-qualified product offering.",
+    "before": [
+      "Existing panel",
+      "Original finish",
+      "Service access"
+    ],
+    "after": [
+      "Reviewed panel",
+      "New finish",
+      "Access retained"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Frontier",
+    "title": "Robot skins designed for replacement",
+    "intro": "A service robot could use replaceable tactile coverings around a designed housing.",
+    "mechanism": "Robotic housing and attachment design",
+    "decorative_role": "Synthetic-leather appearance and touch",
+    "review": "Review flexibility, cleanability, attachment, motion and sensor compatibility. Human-skin use is a separate research question.",
+    "before": [
+      "Rigid housing",
+      "Touch zone",
+      "Sensor window"
+    ],
+    "after": [
+      "Tactile cover",
+      "Replaceable skin",
+      "Clear sensor"
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Frontier",
+    "title": "Furniture surfaces with integrated touch controls",
+    "intro": "A surface could accommodate a separate sensor and control system within a furniture module.",
+    "mechanism": "Sensors, electronics and approved interface",
+    "decorative_role": "Decorative surrounding surfaces",
+    "review": "Confirm electrical safety, service access, coating thickness and sensor response in the actual construction.",
+    "before": [
+      "Plain face",
+      "Manual switch",
+      "Cabinet"
+    ],
+    "after": [
+      "Touch zone",
+      "Sensor module",
+      "Service cabinet"
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Frontier",
+    "title": "A visual skin that changes with the room",
+    "intro": "Display or lighting modules can create changeable imagery beside passive material finishes.",
+    "mechanism": "Separate display or controlled-light system",
+    "decorative_role": "Replaceable passive frames and adjacent skins",
+    "review": "Power, heat, optics and controls are hardware questions. A passive decorative film is not a dynamic display.",
+    "before": [
+      "Static panel",
+      "Passive frame",
+      "Fixed colour"
+    ],
+    "after": [
+      "Display module",
+      "Renewable frame",
+      "Changeable image"
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Frontier",
+    "title": "Space-habitat living to plant module",
+    "intro": "A future habitat could allocate a serviced module between living and growing functions.",
+    "mechanism": "Life-support, controlled agriculture and habitat engineering",
+    "decorative_role": "Durable cleanable service panels",
+    "review": "This is a research vision. Atmosphere, water, light, contamination control and mission qualification require dedicated systems.",
+    "before": [
+      "Living module",
+      "Storage pod",
+      "Service wall"
+    ],
+    "after": [
+      "Plant module",
+      "Grow systems",
+      "Service wall"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "Frontier",
+    "title": "Marine interior with a contained grow module",
+    "intro": "A contained growing unit could be explored within unused onboard interior space.",
+    "mechanism": "A secured agriculture module and services",
+    "decorative_role": "Qualified surrounding panel finishes",
+    "review": "Humidity, power, water, stability and vessel requirements need review. Decorative surfaces do not provide food-safety or growing performance.",
+    "before": [
+      "Unused corner",
+      "Dry storage",
+      "Cabin services"
+    ],
+    "after": [
+      "Grow module",
+      "Managed moisture",
+      "Dedicated services"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Frontier",
+    "title": "A material passport for the next renewal",
+    "intro": "A digital panel record can make later repair and replacement more precise.",
+    "mechanism": "A maintained component and material record",
+    "decorative_role": "Traceable finish references and batch identity",
+    "review": "Record construction, adhesives, grade, location, repairs and available recycling routes; do not assume every composite is recyclable.",
+    "before": [
+      "Unknown layers",
+      "Lost code",
+      "Mixed parts"
+    ],
+    "after": [
+      "Layer record",
+      "Finish code",
+      "Tracked parts"
+    ]
+  }
+]

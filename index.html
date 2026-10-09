@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neipclova — For Our Everyday Life</title>
+<meta name="description" content="Neipclova brings nature and technology together for everyday life: water, energy, smart farming, wellness, Korean ceramics, better taste and eco-friendly decorative products.">
+<meta name="theme-color" content="#0f2f1c">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://neipclova.com/">
+<meta property="og:title" content="Neipclova — For Our Everyday Life">
+<meta property="og:description" content="Nature · Technology · A Better Life. Sustainable solutions for today and tomorrow.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="font-css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&family=Lato:wght@400;700&family=Satisfy&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --ink:#16201a;
+  --green-900:#0f2f1c;
+  --green-700:#1f5c33;
+  --leaf:#15452a;
+  --cream:#fffaf1;
+  --gold:#d8b864;
+  --serif:'DM Serif Display',Georgia,'Times New Roman',serif;
+  --serif-text:'DM Serif Text',Georgia,'Times New Roman',serif;
+  --script:'Satisfy','Brush Script MT',cursive;
+  --sans:'Lato','Helvetica Neue',Arial,sans-serif;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:#e7e1cf}
+a{color:inherit}
+.h-home{color:inherit;text-decoration:none}
+.brand,.h-home{cursor:pointer}
+a:focus-visible,button:focus-visible{outline:2px solid var(--green-700);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:#fff;padding:.6em 1em}
+.skip:focus{left:1rem;top:1rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-60px;z-index:-1;background:var(--img-base) center/cover no-repeat;filter:blur(26px) saturate(1.05)}
+.nav-toggle{display:none}
+
+/* ---------- pot + living clovers (shared) ---------- */
+.pot{pointer-events:none}
+.pot-img{display:none}
+.clover-canvas{position:absolute;left:13.014%;top:9.670%;width:73.973%;height:73.846%;display:block}
+.pot-glow{position:absolute;left:15%;top:10%;width:70%;height:66%;border-radius:50%;background:radial-gradient(ellipse at 50% 12%,rgba(255,238,170,.75),rgba(255,238,170,0) 62%);mix-blend-mode:screen;opacity:.3;animation:potglow 6.5s ease-in-out infinite alternate}
+.sparkles i{position:absolute;width:1.5%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff 0,rgba(255,250,210,.9) 28%,rgba(255,250,210,0) 70%);transform:translate(-50%,-50%) scale(0);opacity:0;animation:twinkle 4.4s ease-in-out infinite}
+@keyframes potglow{from{opacity:.18}to{opacity:.55}}
+@keyframes twinkle{0%,62%,100%{transform:translate(-50%,-50%) scale(0);opacity:0}74%{transform:translate(-50%,-50%) scale(1);opacity:1}86%{transform:translate(-50%,-50%) scale(.4);opacity:.4}}
+@keyframes beacon{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.18)}}
+
+/* ---------- business-area cards (shared) ---------- */
+.card{display:block;text-decoration:none;color:#141a17;container-type:inline-size;--k:calc(100cqw / var(--w));transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.card:focus-visible{outline:none}
+.card-shape{position:absolute;inset:0;transition:filter .45s}
+.card-img,.card-veil{position:absolute;inset:0;-webkit-mask:var(--mask) 0 0/100% 100% no-repeat;mask:var(--mask) 0 0/100% 100% no-repeat}
+.card-img{background-image:var(--img-base);background-repeat:no-repeat;background-size:calc(100cqw * 1670 / var(--w)) auto;background-position:calc(-100cqw * var(--x) / var(--w)) calc(-100cqw * var(--y) / var(--w))}
+.card-veil{opacity:0;transition:opacity .4s;background:linear-gradient(90deg,rgba(255,250,241,0) calc(var(--v0) * var(--k)),rgba(255,250,241,.93) calc(var(--v1) * var(--k)),rgba(255,250,241,.9) 100%)}
+.card--eco .card-veil{background:linear-gradient(90deg,rgba(255,250,241,0) calc(var(--v0) * var(--k)),rgba(255,250,241,.94) calc(var(--v1) * var(--k)),rgba(255,250,241,.94) calc(var(--v2) * var(--k)),rgba(255,250,241,0) calc(var(--v3) * var(--k)))}
+.card .title{margin:0;font-size:1rem;font-weight:400}
+.card .t,.card .tl{position:absolute;left:calc(var(--lx) * var(--k));top:calc(var(--ly) * var(--k));font-size:calc(var(--fs) * var(--k));line-height:1;white-space:nowrap}
+.card .tl{font-family:var(--serif);color:#141a17;transform:scaleX(var(--sx));transform-origin:0 0}
+.card .num{font-family:var(--sans)}
+.card .line{font-family:var(--sans);color:#1e2220;transition:opacity .3s}
+.card .sub i{font-style:normal;margin:0 .8em;color:#5f6159}
+.card-desc{position:absolute;left:calc(var(--lx) * var(--k));top:calc(var(--ly) * var(--k));width:calc(var(--dw) * var(--k));font-size:calc(var(--dfs) * var(--k));line-height:1.38;color:#1b231e;opacity:0;transform:translateY(calc(6 * var(--k)));transition:opacity .35s,transform .45s;pointer-events:none}
+.card-desc .more{font-weight:700;color:var(--green-700);white-space:nowrap}
+.card-desc .more svg{width:1.1em;height:1.1em;vertical-align:-.22em;margin-left:.2em}
+
+/* =========================================================
+   Desktop: a 1:1 replica of the 1670 x 941 design
+   ========================================================= */
+@media (min-width:961px){
+  .hero::before{display:none}
+  .stage{position:relative;width:100%;aspect-ratio:1670/941;container-type:inline-size;--u:calc(100cqw / 1670)}
+  .stage-bg{position:absolute;inset:0;background:var(--img-base) 0 0/100% 100% no-repeat}
+  .lh-glow{position:absolute;left:calc(1527 * var(--u));top:calc(84 * var(--u));width:calc(52 * var(--u));height:calc(52 * var(--u));border-radius:50%;background:radial-gradient(circle,rgba(255,248,215,.95) 0,rgba(255,214,120,.55) 30%,rgba(255,200,90,0) 70%);mix-blend-mode:screen;animation:beacon 3.4s ease-in-out infinite;pointer-events:none}
+
+  .site-header{position:absolute;inset:0 0 auto;height:calc(130 * var(--u));z-index:5}
+  .brand{text-decoration:none}
+  .brand-mark{position:absolute;left:calc(182 * var(--u));top:calc(20 * var(--u));width:calc(88 * var(--u));height:calc(100 * var(--u))}
+  .brand-name,.main-nav li,.btn-contact,.h-title,.h-script,.h-tag,.h-sub{position:absolute;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));margin:0;line-height:1;white-space:nowrap}
+  .brand-name,.h-title,.h-script,.h-tag,.h-sub{font-size:calc(var(--fs) * var(--u))}
+  .brand-name{font-family:var(--serif);color:#10301c;transform:scaleX(var(--sx));transform-origin:0 0;text-shadow:0 0 calc(16 * var(--u)) rgba(255,250,238,.9)}
+  .main-nav ul{list-style:none;margin:0;padding:0}
+  .main-nav li{font-size:calc(17.5 * var(--u))}
+  .main-nav a{position:relative;display:inline-block;text-decoration:none;color:#1b1d1c;text-shadow:0 0 calc(10 * var(--u)) rgba(255,250,238,.9);transition:color .2s}
+  .main-nav a::after{content:"";position:absolute;left:calc(-2 * var(--u));right:0;top:calc(22.3 * var(--u));height:max(1.5px,calc(2 * var(--u)));background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+  .main-nav a:hover{color:var(--green-700)}
+  .main-nav a:hover::after,.main-nav a[aria-current="page"]::after{transform:scaleX(1)}
+  .btn-contact{display:flex;align-items:center;gap:calc(11 * var(--u));width:calc(195 * var(--u));height:calc(44 * var(--u));padding-left:calc(17 * var(--u));border-radius:999px;background:var(--green-900);color:#fff;font-size:calc(18.3 * var(--u));text-decoration:none;box-shadow:0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(10,40,20,.28);transition:background .25s,transform .25s}
+  .btn-contact svg{flex:none;fill:var(--green-900)}
+  .btn-contact svg:first-child{width:calc(29 * var(--u));height:calc(29 * var(--u))}
+  .btn-contact svg:last-child{width:calc(21 * var(--u));height:calc(21 * var(--u));margin-left:calc(-1 * var(--u))}
+  .btn-contact:hover{background:#174a2a;transform:translateY(calc(-1 * var(--u)))}
+
+  .hero-title{position:absolute;inset:0;pointer-events:none}
+  .h-title{font-family:var(--serif);font-weight:400;color:#10301c;transform:scaleX(var(--sx));transform-origin:0 0;text-shadow:0 0 calc(26 * var(--u)) rgba(255,248,230,.9)}
+  .title-clover{display:none}
+  .h-title{pointer-events:auto}
+  .h-script{font-family:var(--script);font-weight:400;color:var(--leaf);transform:scaleX(var(--sx));transform-origin:0 0;text-shadow:0 0 calc(18 * var(--u)) rgba(255,248,230,.9)}
+  .h-tag{display:flex;align-items:center;gap:calc(11 * var(--u));font-family:var(--serif-text);letter-spacing:-.01em;color:#1d2b20;text-shadow:0 0 calc(12 * var(--u)) rgba(255,248,230,.95)}
+  .h-tag::before,.h-tag::after{content:"";width:calc(29 * var(--u));height:max(1px,calc(1.6 * var(--u)));background:currentColor}
+  .h-sub{font-family:var(--sans);color:#26302a;text-shadow:0 0 calc(10 * var(--u)) rgba(255,248,230,.95)}
+
+  .pot{position:absolute;left:calc(470 * var(--u));top:calc(380 * var(--u));width:calc(730 * var(--u));height:calc(455 * var(--u));z-index:1}
+  .card{position:absolute;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));width:calc(var(--w) * var(--u));height:calc(var(--h) * var(--u));z-index:2}
+  .card-body{position:absolute;inset:0}
+  .card:focus-visible{z-index:4;transform:translateY(calc(-3 * var(--u))) scale(1.018)}
+  .card:focus-visible .card-shape{filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 calc(14 * var(--u)) rgba(255,222,140,.95)) drop-shadow(0 calc(10 * var(--u)) calc(18 * var(--u)) rgba(50,35,10,.28))}
+  .card:focus-visible .card-veil,.card:focus-visible .card-desc{opacity:1;transform:none}
+  .card:focus-visible .line{opacity:0}
+}
+@media (min-width:961px) and (hover:hover){
+  .card:hover{z-index:4;transform:translateY(calc(-3 * var(--u))) scale(1.018)}
+  .card:hover .card-shape{filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 calc(14 * var(--u)) rgba(255,222,140,.95)) drop-shadow(0 calc(10 * var(--u)) calc(18 * var(--u)) rgba(50,35,10,.28))}
+  .card:hover .card-veil,.card:hover .card-desc{opacity:1;transform:none}
+  .card:hover .line{opacity:0}
+}
+
+/* =========================================================
+   Tablet & mobile: stacked layout
+   ========================================================= */
+@media (max-width:960px){
+  .stage{width:100%;padding-bottom:32px}
+  .stage-bg,.lh-glow{display:none}
+  .site-header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:8px;padding:10px 14px;padding-top:max(10px,env(safe-area-inset-top));background:rgba(255,251,242,.84);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(16,48,28,.1)}
+  .brand{display:flex;align-items:center;gap:7px;margin-right:auto;text-decoration:none}
+  .brand-mark{width:32px;height:38px;background:var(--img-logo) center/contain no-repeat}
+  .brand-name{font-family:var(--serif);font-size:26px;line-height:1;color:#10301c}
+  .btn-contact{order:2;display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 15px 0 11px;border-radius:999px;background:var(--green-900);color:#fff;font-size:15px;text-decoration:none;white-space:nowrap}
+  .btn-contact svg{fill:var(--green-900)}
+  .btn-contact svg:first-child{width:22px;height:22px}
+  .btn-contact svg:last-child{display:none}
+  .nav-toggle{order:3;display:inline-grid;place-items:center;width:42px;height:42px;padding:0;border:0;border-radius:12px;background:transparent;color:#10301c;cursor:pointer}
+  .nav-toggle svg{width:26px;height:26px}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:rgba(255,251,242,.97);box-shadow:0 12px 24px rgba(16,48,28,.12)}
+  body.nav-open .main-nav{display:block}
+  .main-nav ul{list-style:none;margin:0;padding:6px 18px 14px}
+  .main-nav a{display:block;padding:13px 2px;font-size:17px;text-decoration:none;border-bottom:1px solid rgba(16,48,28,.08)}
+  .main-nav a[aria-current="page"]{color:var(--green-700);font-weight:700}
+
+  .hero-title{position:relative;isolation:isolate;container-type:inline-size;display:flex;flex-direction:column;align-items:center;text-align:center;padding:44px 16px 30px}
+  .hero-title::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--img-sky) center top/cover no-repeat;-webkit-mask:linear-gradient(#000 64%,transparent);mask:linear-gradient(#000 64%,transparent)}
+  .h-title{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(54px,17vw,104px);line-height:1;color:#10301c;transform:scaleX(var(--sx));text-shadow:0 0 22px rgba(255,248,230,.9)}
+  .v{position:relative}
+  .title-clover{position:absolute;left:50%;bottom:80%;width:.4em;height:.4em;transform:translateX(-50%);background:var(--img-title-clover) center bottom/contain no-repeat}
+  .h-script{margin:.1em 0 0;font-family:var(--script);font-size:clamp(32px,9.8vw,58px);line-height:1.1;color:var(--leaf);transform:scaleX(var(--sx));white-space:nowrap;text-shadow:0 0 16px rgba(255,248,230,.9)}
+  .h-tag{display:flex;align-items:center;gap:10px;margin:14px 0 0;font-family:var(--serif-text);font-size:clamp(15px,4.3vw,22px);color:#1d2b20}
+  .h-tag::before,.h-tag::after{content:"";width:22px;height:1.5px;background:currentColor}
+  .h-sub{margin:8px 0 0;font-size:clamp(13px,3.6vw,16px);color:#26302a}
+
+  .pot{position:relative;width:min(100%,560px);aspect-ratio:730/455;margin:-4px auto 8px;container-type:inline-size}
+  .pot-img{display:block;position:absolute;inset:0;background:var(--img-base) no-repeat;background-size:calc(100cqw * 1670 / 730) auto;background-position:calc(-100cqw * 470 / 730) calc(-100cqw * 380 / 730);-webkit-mask:radial-gradient(ellipse 50% 50% at 50% 48%,#000 56%,transparent 90%);mask:radial-gradient(ellipse 50% 50% at 50% 48%,#000 56%,transparent 90%)}
+
+  .areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px;max-width:920px;margin:0 auto;padding:6px 16px 0}
+  .card{position:relative}
+  .card-body{position:relative;display:block;aspect-ratio:var(--w) / var(--h)}
+  .card-shape{filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 6px 14px rgba(40,30,10,.22))}
+  .card-veil{display:none}
+  .card-desc{position:static;display:block;width:auto;opacity:1;transform:none;margin-top:8px;padding:11px 15px;border-radius:16px;font-size:15px;line-height:1.5;background:rgba(255,251,242,.88)}
+  .card:active .card-shape{filter:drop-shadow(0 0 2px #fff) drop-shadow(0 0 12px rgba(255,222,140,.95))}
+
+  .card--eco{grid-column:1 / -1}
+  .card--eco .card-body{aspect-ratio:16 / 7}
+  .card--eco .card-shape{filter:drop-shadow(0 6px 14px rgba(40,30,10,.22))}
+  .card--eco .card-img{-webkit-mask:none;mask:none;border:3px solid #fff;border-radius:26px;background-size:auto calc(100% * 941 / 106);background-position:80.5% 97.8%}
+  .card--eco .card-img::after{content:"";position:absolute;inset:0;border-radius:23px;background:linear-gradient(90deg,rgba(255,250,241,.96) 0,rgba(255,250,241,.88) 48%,rgba(255,250,241,0) 82%)}
+  .card--eco .title{position:absolute;left:6%;top:16%;width:64%}
+  .card--eco .tl{position:static;display:block;transform:none;white-space:normal;font-size:max(21px,6.4cqw);line-height:1.05}
+  .card--eco .sub{left:6%;top:auto;bottom:13%;width:62%;white-space:normal;font-size:max(12px,2.9cqw);line-height:1.45}
+  .card--eco .sub i{margin:0 .45em}
+}
+@media (max-width:620px){
+  .areas{grid-template-columns:1fr}
+  .btn-contact span{font-size:14px}
+}
+@media (max-width:360px){
+  .btn-contact span{display:none}
+  .btn-contact{padding:0 9px}
+}
+
+/* ---------- footer ---------- */
+.site-footer{background:#0f2a1a;color:#efe7d4;padding:56px 24px 26px;border-top:3px solid var(--gold);padding-bottom:max(26px,env(safe-area-inset-bottom))}
+.footer-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:40px}
+.f-mark{display:block;width:40px;height:46px}
+.f-name{margin:12px 0 0;font-family:var(--serif);font-size:34px;line-height:1;color:#fff8e6}
+.f-script{margin:6px 0 0;font-family:var(--script);font-size:24px;color:#d8c48a}
+.f-contact{display:grid;gap:12px;font-style:normal;font-size:15.5px;line-height:1.5}
+.f-contact p{display:grid;grid-template-columns:86px 1fr;gap:12px;margin:0;align-items:start}
+.f-contact p>a{justify-self:start}
+.f-label{padding-top:2px;font-size:13.5px;color:#c8b57a}
+.f-contact a,.f-nav a{color:#fff8e6;text-decoration:none;border-bottom:1px solid rgba(255,248,230,.28);transition:color .2s,border-color .2s}
+.f-contact a:hover,.f-nav a:hover{color:#f0d68a;border-color:currentColor}
+.f-nav{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:15.5px}
+.f-map{margin-top:8px}
+.f-copy{max-width:1180px;margin:40px auto 0;padding-top:18px;border-top:1px solid rgba(255,248,230,.14);font-size:13px;color:#b7ad95}
+.site-footer a:focus-visible{outline-color:#f0d68a}
+@media (max-width:760px){
+  .footer-inner{grid-template-columns:1fr;gap:28px}
+  .f-contact p{grid-template-columns:76px 1fr}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+</style>
+<!-- Images live in /assets. Replace the files (same names) to swap images. -->
+<style id="embedded-images">
+:root{--img-base:url("assets/neipclova-bg@2x.webp");--img-logo:url("assets/logo-clover.webp");--img-title-clover:url("assets/title-clover.webp");--img-sky:url("assets/hero-sky@2x.webp")}
+</style>
+<link rel="stylesheet" href="water-transition.css"><link rel="stylesheet" href="energy-transition.css?v=2">
+<link rel="stylesheet" href="farm-transition.css?v=1">
+<link rel="stylesheet" href="wellness-motion.css?v=3">
+<link rel="stylesheet" href="ceramics-motion.css?v=1"><link rel="stylesheet" href="taste-motion.css?v=1"><link rel="stylesheet" href="decor-motion.css"><style id="eco-card-spacing">
+.stage-eco-bg,.stage-gap-bg{display:none}
+
+@media(max-width:960px){
+ .card--eco{margin-top:8px}
+ .card--eco .eco-number{left:6%;top:7%;font-size:max(12px,3.2cqw)}
+ .card--eco .title{top:20%}
+}
+</style></head>
+<body>
+<a class="skip" href="#areas">Skip to business areas</a>
+<div class="hero" id="top">
+  <div class="stage">
+    <div class="stage-bg" aria-hidden="true"></div>
+    <span class="lh-glow" aria-hidden="true"></span>
+
+    <header class="site-header">
+      <a class="brand" href="#top" data-home aria-label="Neipclova — back to home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" style="--x:282.1;--y:28.7;--fs:62.81;--sx:1.0">Neipclova</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul><li style="--x:672.0;--y:46.2"><a href="#top" aria-current="page" data-home>Home</a></li><li style="--x:758.0;--y:46.2"><a href="about.html">About</a></li><li style="--x:843.0;--y:46.2"><a href="technology.html">Technology</a></li><li style="--x:970.0;--y:46.2"><a href="applications.html">Applications</a></li><li style="--x:1103.0;--y:46.2"><a href="gallery.html">Gallery</a></li><li style="--x:1196.0;--y:46.2"><a href="contact.html">Contact</a></li></ul>
+      </nav>
+      <a class="btn-contact" href="https://wa.me/821027030217?text=Hello%20Neipclova%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener" style="--x:1306.0;--y:35.0">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4C8.8 4 3 8.7 3 14.6c0 3.1 1.6 5.9 4.2 7.8L6.3 28l5.7-3.1c1.3.4 2.6.5 4 .5 7.2 0 13-4.7 13-10.6S23.2 4 16 4Z" fill="#fff"/><circle cx="10.6" cy="14.7" r="1.8"/><circle cx="16" cy="14.7" r="1.8"/><circle cx="21.4" cy="14.7" r="1.8"/></svg><span>Contact Us</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </header>
+
+    <div class="hero-title">
+      <h1 class="h-title" style="--x:631.9;--y:107.8;--fs:109.70;--sx:0.936"><a class="h-home" href="#top" data-home aria-label="Neipclova — back to home">Neipclo<span class="v">v<span class="title-clover" aria-hidden="true"></span></span>a</a></h1>
+      <p class="h-script" style="--x:611.3;--y:226.3;--fs:63.65;--sx:0.9">For Our Everyday Life</p>
+      <p class="h-tag" style="--x:637.0;--y:308.4;--fs:23.00"><span>Nature · Technology · A Better Life</span></p>
+      <p class="h-sub" style="--x:678.0;--y:343.4;--fs:16.50">Sustainable Solutions for Today and Tomorrow</p>
+    </div>
+
+    <div class="pot" aria-hidden="true">
+      <span class="pot-img"></span>
+      <canvas class="clover-canvas"></canvas>
+      <span class="pot-glow"></span>
+      <span class="sparkles"><i style="left:31.51%;top:19.78%;animation-delay:0.00s"></i><i style="left:44.11%;top:31.21%;animation-delay:0.73s"></i><i style="left:59.59%;top:21.54%;animation-delay:1.46s"></i><i style="left:67.40%;top:40.88%;animation-delay:2.19s"></i><i style="left:24.66%;top:49.23%;animation-delay:2.92s"></i><i style="left:52.33%;top:57.14%;animation-delay:3.65s"></i><i style="left:74.25%;top:59.78%;animation-delay:0.38s"></i><i style="left:37.26%;top:70.33%;animation-delay:1.11s"></i><i style="left:56.16%;top:39.56%;animation-delay:1.84s"></i></span>
+    </div>
+
+    <section class="areas" id="areas" aria-label="Business areas">
+      <a class="card card--water" href="water.html" style="--x:66;--y:181;--w:448;--h:232;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggMjMyIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJNNDQ2LjksMTIxLjggTDQ0Ni43LDEyNy41IEw0NDYuMywxMzIuMSBMNDQ1LjcsMTM2LjQgTDQ0NC45LDE0MC41IEw0NDMuOSwxNDQuNSBMNDQyLjgsMTQ4LjMgTDQ0MS41LDE1Mi4wIEw0MzkuOSwxNTUuNyBMNDM4LjIsMTU5LjIgTDQzNi4zLDE2Mi42IEw0MzQuMywxNjYuMCBMNDMyLjAsMTY5LjMgTDQyOS42LDE3Mi41IEw0MjYuOSwxNzUuNiBMNDI0LjEsMTc4LjYgTDQyMS4yLDE4MS42IEw0MTguMCwxODQuNSBMNDE0LjcsMTg3LjMgTDQxMS4yLDE5MC4wIEw0MDcuNSwxOTIuNiBMNDAzLjcsMTk1LjIgTDM5OS43LDE5Ny43IEwzOTUuNSwyMDAuMSBMMzkxLjIsMjAyLjQgTDM4Ni43LDIwNC42IEwzODIuMSwyMDYuOCBMMzc3LjMsMjA4LjggTDM3Mi4zLDIxMC44IEwzNjcuMiwyMTIuNyBMMzYyLjAsMjE0LjUgTDM1Ni42LDIxNi4yIEwzNTEuMCwyMTcuOCBMMzQ1LjMsMjE5LjMgTDMzOS41LDIyMC43IEwzMzMuNSwyMjIuMCBMMzI3LjQsMjIzLjIgTDMyMS4xLDIyNC40IEwzMTQuNywyMjUuNCBMMzA4LjEsMjI2LjQgTDMwMS40LDIyNy4yIEwyOTQuNiwyMjcuOSBMMjg3LjYsMjI4LjYgTDI4MC40LDIyOS4xIEwyNzMuMCwyMjkuNiBMMjY1LjUsMjI5LjkgTDI1Ny43LDIzMC4xIEwyNDkuNiwyMzAuMyBMMjQxLjEsMjMwLjMgTDIzMi4wLDIzMC4yIEwyMjEuMCwyMzAuMCBMMjEwLjAsMjI5LjYgTDIwMC45LDIyOS4yIEwxOTIuNSwyMjguOCBMMTg0LjQsMjI4LjIgTDE3Ni42LDIyNy42IEwxNjkuMSwyMjYuOCBMMTYxLjgsMjI2LjAgTDE1NC42LDIyNS4xIEwxNDcuNywyMjQuMSBMMTQwLjksMjIzLjAgTDEzNC4yLDIyMS44IEwxMjcuNywyMjAuNSBMMTIxLjQsMjE5LjIgTDExNS4yLDIxNy43IEwxMDkuMSwyMTYuMSBMMTAzLjIsMjE0LjUgTDk3LjUsMjEyLjggTDkxLjgsMjExLjAgTDg2LjQsMjA5LjEgTDgxLjEsMjA3LjEgTDc1LjksMjA1LjAgTDcwLjksMjAyLjkgTDY2LjEsMjAwLjcgTDYxLjQsMTk4LjQgTDU2LjksMTk2LjAgTDUyLjUsMTkzLjUgTDQ4LjMsMTkxLjAgTDQ0LjMsMTg4LjQgTDQwLjQsMTg1LjcgTDM2LjcsMTgyLjkgTDMzLjIsMTgwLjEgTDI5LjgsMTc3LjIgTDI2LjcsMTc0LjIgTDIzLjcsMTcxLjIgTDIwLjksMTY4LjEgTDE4LjIsMTY0LjkgTDE1LjgsMTYxLjYgTDEzLjUsMTU4LjMgTDExLjQsMTU0LjkgTDkuNSwxNTEuNSBMNy44LDE0Ny45IEw2LjMsMTQ0LjMgTDUuMCwxNDAuNiBMMy44LDEzNi44IEwyLjksMTMyLjkgTDIuMSwxMjguOSBMMS42LDEyNC44IEwxLjIsMTIwLjQgTDEuMCwxMTUuOCBMMS4xLDExMC4yIEwxLjMsMTA0LjUgTDEuNyw5OS45IEwyLjMsOTUuNiBMMy4xLDkxLjUgTDQuMSw4Ny41IEw1LjIsODMuNyBMNi41LDgwLjAgTDguMSw3Ni4zIEw5LjgsNzIuOCBMMTEuNyw2OS40IEwxMy43LDY2LjAgTDE2LjAsNjIuNyBMMTguNCw1OS41IEwyMS4xLDU2LjQgTDIzLjksNTMuNCBMMjYuOCw1MC40IEwzMC4wLDQ3LjUgTDMzLjMsNDQuNyBMMzYuOCw0Mi4wIEw0MC41LDM5LjQgTDQ0LjMsMzYuOCBMNDguMywzNC4zIEw1Mi41LDMxLjkgTDU2LjgsMjkuNiBMNjEuMywyNy40IEw2NS45LDI1LjIgTDcwLjcsMjMuMiBMNzUuNywyMS4yIEw4MC44LDE5LjMgTDg2LjAsMTcuNSBMOTEuNCwxNS44IEw5Ny4wLDE0LjIgTDEwMi43LDEyLjcgTDEwOC41LDExLjMgTDExNC41LDEwLjAgTDEyMC42LDguOCBMMTI2LjksNy42IEwxMzMuMyw2LjYgTDEzOS45LDUuNiBMMTQ2LjYsNC44IEwxNTMuNCw0LjEgTDE2MC40LDMuNCBMMTY3LjYsMi45IEwxNzUuMCwyLjQgTDE4Mi41LDIuMSBMMTkwLjMsMS45IEwxOTguNCwxLjcgTDIwNi45LDEuNyBMMjE2LjAsMS44IEwyMjcuMCwyLjAgTDIzOC4wLDIuNCBMMjQ3LjEsMi44IEwyNTUuNSwzLjIgTDI2My42LDMuOCBMMjcxLjQsNC40IEwyNzguOSw1LjIgTDI4Ni4yLDYuMCBMMjkzLjQsNi45IEwzMDAuMyw3LjkgTDMwNy4xLDkuMCBMMzEzLjgsMTAuMiBMMzIwLjMsMTEuNSBMMzI2LjYsMTIuOCBMMzMyLjgsMTQuMyBMMzM4LjksMTUuOSBMMzQ0LjgsMTcuNSBMMzUwLjUsMTkuMiBMMzU2LjIsMjEuMCBMMzYxLjYsMjIuOSBMMzY2LjksMjQuOSBMMzcyLjEsMjcuMCBMMzc3LjEsMjkuMSBMMzgxLjksMzEuMyBMMzg2LjYsMzMuNiBMMzkxLjEsMzYuMCBMMzk1LjUsMzguNSBMMzk5LjcsNDEuMCBMNDAzLjcsNDMuNiBMNDA3LjYsNDYuMyBMNDExLjMsNDkuMSBMNDE0LjgsNTEuOSBMNDE4LjIsNTQuOCBMNDIxLjMsNTcuOCBMNDI0LjMsNjAuOCBMNDI3LjEsNjMuOSBMNDI5LjgsNjcuMSBMNDMyLjIsNzAuNCBMNDM0LjUsNzMuNyBMNDM2LjYsNzcuMSBMNDM4LjUsODAuNSBMNDQwLjIsODQuMSBMNDQxLjcsODcuNyBMNDQzLjAsOTEuNCBMNDQ0LjIsOTUuMiBMNDQ1LjEsOTkuMSBMNDQ1LjksMTAzLjEgTDQ0Ni40LDEwNy4yIEw0NDYuOCwxMTEuNiBMNDQ3LjAsMTE2LjJaIi8+PC9zdmc+);--v0:132;--v1:178">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num" style="--lx:192.0;--ly:19.3;--fs:17;color:#1565b8">01</span><h2 class="title"><span class="tl" style="--lx:190.0;--ly:38.1;--fs:32.78;--sx:0.9">Water</span></h2><span class="t line" style="--lx:192.0;--ly:80.4;--fs:16.1">Cleaner Water</span><span class="t line" style="--lx:192.0;--ly:99.4;--fs:16.1">for a Healthier Life</span>
+        </span>
+        <span class="card-desc" style="--lx:192.0;--ly:80.0;--dw:212.0;--dfs:15">Filtration and treatment that make everyday water cleaner and better tasting. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+      <a class="card card--energy" href="energy.html" style="--x:30;--y:405;--w:448;--h:208;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggMjA4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJNNDQ3LjAsMTAwLjEgTDQ0Ny4wLDEwNS44IEw0NDYuOCwxMTAuMyBMNDQ2LjQsMTE0LjQgTDQ0NS44LDExOC4yIEw0NDUuMSwxMjEuOSBMNDQ0LjEsMTI1LjQgTDQ0My4wLDEyOC45IEw0NDEuNywxMzIuMiBMNDQwLjIsMTM1LjQgTDQzOC41LDEzOC42IEw0MzYuNiwxNDEuNyBMNDM0LjYsMTQ0LjcgTDQzMi40LDE0Ny42IEw0MzAuMCwxNTAuNSBMNDI3LjQsMTUzLjMgTDQyNC43LDE1Ni4wIEw0MjEuOCwxNTguNyBMNDE4LjcsMTYxLjMgTDQxNS40LDE2My44IEw0MTIuMCwxNjYuMiBMNDA4LjQsMTY4LjYgTDQwNC43LDE3MC45IEw0MDAuNywxNzMuMiBMMzk2LjYsMTc1LjQgTDM5Mi40LDE3Ny41IEwzODguMCwxNzkuNSBMMzgzLjQsMTgxLjUgTDM3OC42LDE4My40IEwzNzMuNywxODUuMiBMMzY4LjcsMTg3LjAgTDM2My41LDE4OC43IEwzNTguMSwxOTAuMyBMMzUyLjYsMTkxLjggTDM0Ni45LDE5My4yIEwzNDEuMSwxOTQuNiBMMzM1LjEsMTk1LjkgTDMyOC45LDE5Ny4xIEwzMjIuNiwxOTguMyBMMzE2LjIsMTk5LjQgTDMwOS41LDIwMC4zIEwzMDIuNywyMDEuMyBMMjk1LjcsMjAyLjEgTDI4OC40LDIwMi44IEwyODEuMCwyMDMuNSBMMjczLjMsMjA0LjEgTDI2NS4zLDIwNC42IEwyNTYuOSwyMDUuMSBMMjQ4LjAsMjA1LjQgTDIzOC4yLDIwNS43IEwyMjUuOCwyMDYuMCBMMjEzLjMsMjA2LjIgTDIwMy42LDIwNi4yIEwxOTQuNywyMDYuMiBMMTg2LjMsMjA2LjAgTDE3OC4yLDIwNS44IEwxNzAuNSwyMDUuNCBMMTYzLjEsMjA1LjAgTDE1NS44LDIwNC41IEwxNDguOCwyMDMuOSBMMTQxLjksMjAzLjMgTDEzNS4yLDIwMi41IEwxMjguNywyMDEuNyBMMTIyLjQsMjAwLjcgTDExNi4yLDE5OS43IEwxMTAuMiwxOTguNiBMMTA0LjMsMTk3LjUgTDk4LjYsMTk2LjIgTDkzLjAsMTk0LjkgTDg3LjYsMTkzLjUgTDgyLjMsMTkyLjAgTDc3LjIsMTkwLjQgTDcyLjIsMTg4LjcgTDY3LjQsMTg3LjAgTDYyLjgsMTg1LjIgTDU4LjMsMTgzLjMgTDU0LjAsMTgxLjQgTDQ5LjgsMTc5LjMgTDQ1LjgsMTc3LjIgTDQyLjAsMTc1LjAgTDM4LjMsMTcyLjggTDM0LjgsMTcwLjQgTDMxLjQsMTY4LjAgTDI4LjIsMTY1LjUgTDI1LjIsMTYzLjAgTDIyLjQsMTYwLjMgTDE5LjcsMTU3LjYgTDE3LjIsMTU0LjkgTDE0LjksMTUyLjAgTDEyLjgsMTQ5LjEgTDEwLjgsMTQ2LjEgTDkuMSwxNDMuMCBMNy40LDEzOS44IEw2LjAsMTM2LjUgTDQuOCwxMzMuMSBMMy43LDEyOS42IEwyLjgsMTI1LjkgTDIuMSwxMjIuMSBMMS42LDExOC4wIEwxLjIsMTEzLjYgTDEuMCwxMDcuOSBMMS4wLDEwMi4yIEwxLjIsOTcuNyBMMS42LDkzLjYgTDIuMiw4OS44IEwyLjksODYuMSBMMy45LDgyLjYgTDUuMCw3OS4xIEw2LjMsNzUuOCBMNy44LDcyLjYgTDkuNSw2OS40IEwxMS40LDY2LjMgTDEzLjQsNjMuMyBMMTUuNiw2MC40IEwxOC4wLDU3LjUgTDIwLjYsNTQuNyBMMjMuMyw1Mi4wIEwyNi4yLDQ5LjMgTDI5LjMsNDYuNyBMMzIuNiw0NC4yIEwzNi4wLDQxLjggTDM5LjYsMzkuNCBMNDMuMywzNy4xIEw0Ny4zLDM0LjggTDUxLjQsMzIuNiBMNTUuNiwzMC41IEw2MC4wLDI4LjUgTDY0LjYsMjYuNSBMNjkuNCwyNC42IEw3NC4zLDIyLjggTDc5LjMsMjEuMCBMODQuNSwxOS4zIEw4OS45LDE3LjcgTDk1LjQsMTYuMiBMMTAxLjEsMTQuOCBMMTA2LjksMTMuNCBMMTEyLjksMTIuMSBMMTE5LjEsMTAuOSBMMTI1LjQsOS43IEwxMzEuOCw4LjYgTDEzOC41LDcuNyBMMTQ1LjMsNi43IEwxNTIuMyw1LjkgTDE1OS42LDUuMiBMMTY3LjAsNC41IEwxNzQuNywzLjkgTDE4Mi43LDMuNCBMMTkxLjEsMi45IEwyMDAuMCwyLjYgTDIwOS44LDIuMyBMMjIyLjIsMi4wIEwyMzQuNywxLjggTDI0NC40LDEuOCBMMjUzLjMsMS44IEwyNjEuNywyLjAgTDI2OS44LDIuMiBMMjc3LjUsMi42IEwyODQuOSwzLjAgTDI5Mi4yLDMuNSBMMjk5LjIsNC4xIEwzMDYuMSw0LjcgTDMxMi44LDUuNSBMMzE5LjMsNi4zIEwzMjUuNiw3LjMgTDMzMS44LDguMyBMMzM3LjgsOS40IEwzNDMuNywxMC41IEwzNDkuNCwxMS44IEwzNTUuMCwxMy4xIEwzNjAuNCwxNC41IEwzNjUuNywxNi4wIEwzNzAuOCwxNy42IEwzNzUuOCwxOS4zIEwzODAuNiwyMS4wIEwzODUuMiwyMi44IEwzODkuNywyNC43IEwzOTQuMCwyNi42IEwzOTguMiwyOC43IEw0MDIuMiwzMC44IEw0MDYuMCwzMy4wIEw0MDkuNywzNS4yIEw0MTMuMiwzNy42IEw0MTYuNiw0MC4wIEw0MTkuOCw0Mi41IEw0MjIuOCw0NS4wIEw0MjUuNiw0Ny43IEw0MjguMyw1MC40IEw0MzAuOCw1My4xIEw0MzMuMSw1Ni4wIEw0MzUuMiw1OC45IEw0MzcuMiw2MS45IEw0MzguOSw2NS4wIEw0NDAuNiw2OC4yIEw0NDIuMCw3MS41IEw0NDMuMiw3NC45IEw0NDQuMyw3OC40IEw0NDUuMiw4Mi4xIEw0NDUuOSw4NS45IEw0NDYuNCw5MC4wIEw0NDYuOCw5NC40WiIvPjwvc3ZnPg==);--v0:121;--v1:167">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num" style="--lx:181.0;--ly:20.3;--fs:17;color:#e9820b">02</span><h2 class="title"><span class="tl" style="--lx:180.3;--ly:39.1;--fs:32.84;--sx:0.918">Energy</span></h2><span class="t line" style="--lx:181.0;--ly:82.4;--fs:16.1">Smart Energy</span><span class="t line" style="--lx:181.0;--ly:100.4;--fs:16.1">for a Sustainable</span><span class="t line" style="--lx:181.0;--ly:118.4;--fs:16.1">Tomorrow</span>
+        </span>
+        <span class="card-desc" style="--lx:181.0;--ly:82.0;--dw:221.0;--dfs:15">Smarter energy use for homes, farms and small factories. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+      <a class="card card--farm" href="smart-farm.html" style="--x:34;--y:614;--w:446;--h:200;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDYgMjAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJNNDQ1LjAsMTAwLjAgTDQ0NC45LDEwNi45IEw0NDQuNywxMTEuOCBMNDQ0LjIsMTE2LjEgTDQ0My43LDEyMC4wIEw0NDIuOSwxMjMuOCBMNDQyLjAsMTI3LjMgTDQ0MC45LDEzMC43IEw0MzkuNiwxMzMuOSBMNDM4LjIsMTM3LjEgTDQzNi42LDE0MC4xIEw0MzQuOCwxNDMuMSBMNDMyLjksMTQ1LjkgTDQzMC44LDE0OC43IEw0MjguNiwxNTEuMyBMNDI2LjEsMTUzLjkgTDQyMy42LDE1Ni40IEw0MjAuOCwxNTguOSBMNDE3LjksMTYxLjMgTDQxNC44LDE2My42IEw0MTEuNiwxNjUuOCBMNDA4LjIsMTY3LjkgTDQwNC43LDE3MC4wIEw0MDAuOSwxNzIuMCBMMzk3LjEsMTc0LjAgTDM5My4wLDE3NS44IEwzODguOSwxNzcuNiBMMzg0LjUsMTc5LjQgTDM4MC4wLDE4MS4wIEwzNzUuMywxODIuNiBMMzcwLjUsMTg0LjEgTDM2NS41LDE4NS41IEwzNjAuNCwxODYuOSBMMzU1LjEsMTg4LjIgTDM0OS42LDE4OS40IEwzNDMuOSwxOTAuNiBMMzM4LjEsMTkxLjcgTDMzMi4xLDE5Mi43IEwzMjUuOSwxOTMuNiBMMzE5LjUsMTk0LjUgTDMxMy4wLDE5NS4zIEwzMDYuMiwxOTYuMCBMMjk5LjEsMTk2LjYgTDI5MS44LDE5Ny4yIEwyODQuMiwxOTcuNiBMMjc2LjMsMTk4LjEgTDI2Ny45LDE5OC40IEwyNTkuMCwxOTguNyBMMjQ5LjQsMTk4LjggTDIzOC41LDE5OS4wIEwyMjMuMCwxOTkuMCBMMjA3LjUsMTk5LjAgTDE5Ni42LDE5OC44IEwxODcuMCwxOTguNyBMMTc4LjEsMTk4LjQgTDE2OS43LDE5OC4xIEwxNjEuOCwxOTcuNiBMMTU0LjIsMTk3LjIgTDE0Ni45LDE5Ni42IEwxMzkuOCwxOTYuMCBMMTMzLjAsMTk1LjMgTDEyNi41LDE5NC41IEwxMjAuMSwxOTMuNiBMMTEzLjksMTkyLjcgTDEwNy45LDE5MS43IEwxMDIuMSwxOTAuNiBMOTYuNCwxODkuNCBMOTAuOSwxODguMiBMODUuNiwxODYuOSBMODAuNSwxODUuNSBMNzUuNSwxODQuMSBMNzAuNywxODIuNiBMNjYuMCwxODEuMCBMNjEuNSwxNzkuNCBMNTcuMSwxNzcuNiBMNTMuMCwxNzUuOCBMNDguOSwxNzQuMCBMNDUuMSwxNzIuMCBMNDEuMywxNzAuMCBMMzcuOCwxNjcuOSBMMzQuNCwxNjUuOCBMMzEuMiwxNjMuNiBMMjguMSwxNjEuMyBMMjUuMiwxNTguOSBMMjIuNCwxNTYuNCBMMTkuOSwxNTMuOSBMMTcuNCwxNTEuMyBMMTUuMiwxNDguNyBMMTMuMSwxNDUuOSBMMTEuMiwxNDMuMSBMOS40LDE0MC4xIEw3LjgsMTM3LjEgTDYuNCwxMzMuOSBMNS4xLDEzMC43IEw0LjAsMTI3LjMgTDMuMSwxMjMuOCBMMi4zLDEyMC4wIEwxLjgsMTE2LjEgTDEuMywxMTEuOCBMMS4xLDEwNi45IEwxLjAsMTAwLjAgTDEuMSw5My4xIEwxLjMsODguMiBMMS44LDgzLjkgTDIuMyw4MC4wIEwzLjEsNzYuMiBMNC4wLDcyLjcgTDUuMSw2OS4zIEw2LjQsNjYuMSBMNy44LDYyLjkgTDkuNCw1OS45IEwxMS4yLDU2LjkgTDEzLjEsNTQuMSBMMTUuMiw1MS4zIEwxNy40LDQ4LjcgTDE5LjksNDYuMSBMMjIuNCw0My42IEwyNS4yLDQxLjEgTDI4LjEsMzguNyBMMzEuMiwzNi40IEwzNC40LDM0LjIgTDM3LjgsMzIuMSBMNDEuMywzMC4wIEw0NS4xLDI4LjAgTDQ4LjksMjYuMCBMNTMuMCwyNC4yIEw1Ny4xLDIyLjQgTDYxLjUsMjAuNiBMNjYuMCwxOS4wIEw3MC43LDE3LjQgTDc1LjUsMTUuOSBMODAuNSwxNC41IEw4NS42LDEzLjEgTDkwLjksMTEuOCBMOTYuNCwxMC42IEwxMDIuMSw5LjQgTDEwNy45LDguMyBMMTEzLjksNy4zIEwxMjAuMSw2LjQgTDEyNi41LDUuNSBMMTMzLjAsNC43IEwxMzkuOCw0LjAgTDE0Ni45LDMuNCBMMTU0LjIsMi44IEwxNjEuOCwyLjQgTDE2OS43LDEuOSBMMTc4LjEsMS42IEwxODcuMCwxLjMgTDE5Ni42LDEuMiBMMjA3LjUsMS4wIEwyMjMuMCwxLjAgTDIzOC41LDEuMCBMMjQ5LjQsMS4yIEwyNTkuMCwxLjMgTDI2Ny45LDEuNiBMMjc2LjMsMS45IEwyODQuMiwyLjQgTDI5MS44LDIuOCBMMjk5LjEsMy40IEwzMDYuMiw0LjAgTDMxMy4wLDQuNyBMMzE5LjUsNS41IEwzMjUuOSw2LjQgTDMzMi4xLDcuMyBMMzM4LjEsOC4zIEwzNDMuOSw5LjQgTDM0OS42LDEwLjYgTDM1NS4xLDExLjggTDM2MC40LDEzLjEgTDM2NS41LDE0LjUgTDM3MC41LDE1LjkgTDM3NS4zLDE3LjQgTDM4MC4wLDE5LjAgTDM4NC41LDIwLjYgTDM4OC45LDIyLjQgTDM5My4wLDI0LjIgTDM5Ny4xLDI2LjAgTDQwMC45LDI4LjAgTDQwNC43LDMwLjAgTDQwOC4yLDMyLjEgTDQxMS42LDM0LjIgTDQxNC44LDM2LjQgTDQxNy45LDM4LjcgTDQyMC44LDQxLjEgTDQyMy42LDQzLjYgTDQyNi4xLDQ2LjEgTDQyOC42LDQ4LjcgTDQzMC44LDUxLjMgTDQzMi45LDU0LjEgTDQzNC44LDU2LjkgTDQzNi42LDU5LjkgTDQzOC4yLDYyLjkgTDQzOS42LDY2LjEgTDQ0MC45LDY5LjMgTDQ0Mi4wLDcyLjcgTDQ0Mi45LDc2LjIgTDQ0My43LDgwLjAgTDQ0NC4yLDgzLjkgTDQ0NC43LDg4LjIgTDQ0NC45LDkzLjFaIi8+PC9zdmc+);--v0:123;--v1:169">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num" style="--lx:184.0;--ly:20.3;--fs:17;color:#4a8a1f">03</span><h2 class="title"><span class="tl" style="--lx:183.0;--ly:40.0;--fs:33.3;--sx:0.9">Smart Farm</span></h2><span class="t line" style="--lx:183.0;--ly:83.4;--fs:16.3">Smarter Farming</span><span class="t line" style="--lx:183.0;--ly:101.4;--fs:16.3">for Fresh Food</span><span class="t line" style="--lx:183.0;--ly:119.4;--fs:16.3">and a Greener Earth</span>
+        </span>
+        <span class="card-desc" style="--lx:183.0;--ly:83.0;--dw:215.0;--dfs:15">Growing environments that support healthy plants while saving energy and water. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+      <a class="card card--wellness" href="wellness.html" style="--x:1196;--y:225;--w:426;--h:218;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MjYgMjE4IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJNNDI1LjAsMTA5LjAgTDQyNC45LDExNC4zIEw0MjQuNiwxMTguNyBMNDI0LjIsMTIyLjggTDQyMy41LDEyNi43IEw0MjIuNywxMzAuNSBMNDIxLjcsMTM0LjIgTDQyMC42LDEzNy43IEw0MTkuMiwxNDEuMiBMNDE3LjcsMTQ0LjYgTDQxNS45LDE0Ny45IEw0MTQuMSwxNTEuMSBMNDEyLjAsMTU0LjMgTDQwOS44LDE1Ny40IEw0MDcuMywxNjAuNCBMNDA0LjgsMTYzLjQgTDQwMi4wLDE2Ni4yIEwzOTkuMSwxNjkuMCBMMzk2LjAsMTcxLjggTDM5Mi43LDE3NC40IEwzODkuMywxNzcuMCBMMzg1LjcsMTc5LjYgTDM4Mi4wLDE4Mi4wIEwzNzguMSwxODQuNCBMMzc0LjAsMTg2LjcgTDM2OS44LDE4OC45IEwzNjUuNSwxOTEuMCBMMzYxLjAsMTkzLjEgTDM1Ni4zLDE5NS4xIEwzNTEuNSwxOTcuMCBMMzQ2LjYsMTk4LjggTDM0MS41LDIwMC42IEwzMzYuMiwyMDIuMiBMMzMwLjksMjAzLjggTDMyNS4zLDIwNS4zIEwzMTkuNywyMDYuNyBMMzEzLjksMjA4LjAgTDMwOC4wLDIwOS4yIEwzMDEuOSwyMTAuNCBMMjk1LjcsMjExLjQgTDI4OS40LDIxMi40IEwyODIuOSwyMTMuMyBMMjc2LjIsMjE0LjAgTDI2OS40LDIxNC43IEwyNjIuNCwyMTUuMyBMMjU1LjIsMjE1LjggTDI0Ny44LDIxNi4zIEwyNDAuMiwyMTYuNiBMMjMyLjEsMjE2LjggTDIyMy41LDIxNy4wIEwyMTMuMCwyMTcuMCBMMjAyLjUsMjE3LjAgTDE5My45LDIxNi44IEwxODUuOCwyMTYuNiBMMTc4LjIsMjE2LjMgTDE3MC44LDIxNS44IEwxNjMuNiwyMTUuMyBMMTU2LjYsMjE0LjcgTDE0OS44LDIxNC4wIEwxNDMuMSwyMTMuMyBMMTM2LjYsMjEyLjQgTDEzMC4zLDIxMS40IEwxMjQuMSwyMTAuNCBMMTE4LjAsMjA5LjIgTDExMi4xLDIwOC4wIEwxMDYuMywyMDYuNyBMMTAwLjcsMjA1LjMgTDk1LjEsMjAzLjggTDg5LjgsMjAyLjIgTDg0LjUsMjAwLjYgTDc5LjQsMTk4LjggTDc0LjUsMTk3LjAgTDY5LjcsMTk1LjEgTDY1LjAsMTkzLjEgTDYwLjUsMTkxLjAgTDU2LjIsMTg4LjkgTDUyLjAsMTg2LjcgTDQ3LjksMTg0LjQgTDQ0LjAsMTgyLjAgTDQwLjMsMTc5LjYgTDM2LjcsMTc3LjAgTDMzLjMsMTc0LjQgTDMwLjAsMTcxLjggTDI2LjksMTY5LjAgTDI0LjAsMTY2LjIgTDIxLjIsMTYzLjQgTDE4LjcsMTYwLjQgTDE2LjIsMTU3LjQgTDE0LjAsMTU0LjMgTDExLjksMTUxLjEgTDEwLjEsMTQ3LjkgTDguMywxNDQuNiBMNi44LDE0MS4yIEw1LjQsMTM3LjcgTDQuMywxMzQuMiBMMy4zLDEzMC41IEwyLjUsMTI2LjcgTDEuOCwxMjIuOCBMMS40LDExOC43IEwxLjEsMTE0LjMgTDEuMCwxMDkuMCBMMS4xLDEwMy43IEwxLjQsOTkuMyBMMS44LDk1LjIgTDIuNSw5MS4zIEwzLjMsODcuNSBMNC4zLDgzLjggTDUuNCw4MC4zIEw2LjgsNzYuOCBMOC4zLDczLjQgTDEwLjEsNzAuMSBMMTEuOSw2Ni45IEwxNC4wLDYzLjcgTDE2LjIsNjAuNiBMMTguNyw1Ny42IEwyMS4yLDU0LjYgTDI0LjAsNTEuOCBMMjYuOSw0OS4wIEwzMC4wLDQ2LjIgTDMzLjMsNDMuNiBMMzYuNyw0MS4wIEw0MC4zLDM4LjQgTDQ0LjAsMzYuMCBMNDcuOSwzMy42IEw1Mi4wLDMxLjMgTDU2LjIsMjkuMSBMNjAuNSwyNy4wIEw2NS4wLDI0LjkgTDY5LjcsMjIuOSBMNzQuNSwyMS4wIEw3OS40LDE5LjIgTDg0LjUsMTcuNCBMODkuOCwxNS44IEw5NS4xLDE0LjIgTDEwMC43LDEyLjcgTDEwNi4zLDExLjMgTDExMi4xLDEwLjAgTDExOC4wLDguOCBMMTI0LjEsNy42IEwxMzAuMyw2LjYgTDEzNi42LDUuNiBMMTQzLjEsNC43IEwxNDkuOCw0LjAgTDE1Ni42LDMuMyBMMTYzLjYsMi43IEwxNzAuOCwyLjIgTDE3OC4yLDEuNyBMMTg1LjgsMS40IEwxOTMuOSwxLjIgTDIwMi41LDEuMCBMMjEzLjAsMS4wIEwyMjMuNSwxLjAgTDIzMi4xLDEuMiBMMjQwLjIsMS40IEwyNDcuOCwxLjcgTDI1NS4yLDIuMiBMMjYyLjQsMi43IEwyNjkuNCwzLjMgTDI3Ni4yLDQuMCBMMjgyLjksNC43IEwyODkuNCw1LjYgTDI5NS43LDYuNiBMMzAxLjksNy42IEwzMDguMCw4LjggTDMxMy45LDEwLjAgTDMxOS43LDExLjMgTDMyNS4zLDEyLjcgTDMzMC45LDE0LjIgTDMzNi4yLDE1LjggTDM0MS41LDE3LjQgTDM0Ni42LDE5LjIgTDM1MS41LDIxLjAgTDM1Ni4zLDIyLjkgTDM2MS4wLDI0LjkgTDM2NS41LDI3LjAgTDM2OS44LDI5LjEgTDM3NC4wLDMxLjMgTDM3OC4xLDMzLjYgTDM4Mi4wLDM2LjAgTDM4NS43LDM4LjQgTDM4OS4zLDQxLjAgTDM5Mi43LDQzLjYgTDM5Ni4wLDQ2LjIgTDM5OS4xLDQ5LjAgTDQwMi4wLDUxLjggTDQwNC44LDU0LjYgTDQwNy4zLDU3LjYgTDQwOS44LDYwLjYgTDQxMi4wLDYzLjcgTDQxNC4xLDY2LjkgTDQxNS45LDcwLjEgTDQxNy43LDczLjQgTDQxOS4yLDc2LjggTDQyMC42LDgwLjMgTDQyMS43LDgzLjggTDQyMi43LDg3LjUgTDQyMy41LDkxLjMgTDQyNC4yLDk1LjIgTDQyNC42LDk5LjMgTDQyNC45LDEwMy43WiIvPjwvc3ZnPg==);--v0:97;--v1:143">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num" style="--lx:157.0;--ly:24.3;--fs:17;color:#e0284f">04</span><h2 class="title"><span class="tl" style="--lx:156.0;--ly:41.2;--fs:32.21;--sx:0.9">Wellness</span></h2><span class="t line" style="--lx:157.0;--ly:85.5;--fs:15.9">Healthy People</span><span class="t line" style="--lx:157.0;--ly:104.5;--fs:15.9">Happier Families</span><span class="t line" style="--lx:157.0;--ly:123.5;--fs:15.9">A Brighter Everyday</span>
+        </span>
+        <span class="card-desc" style="--lx:157.0;--ly:85.0;--dw:232.0;--dfs:15">Everyday products for body and mind, starting with Mindful Wear. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+      <a class="card card--ceramics" href="ceramics.html" style="--x:1194;--y:443;--w:460;--h:230;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NjAgMjMwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJNNDU5LjAsMTE1LjAgTDQ1OC45LDEyNC42IEw0NTguNywxMzAuOCBMNDU4LjMsMTM2LjEgTDQ1Ny43LDE0MC45IEw0NTcuMCwxNDUuMyBMNDU2LjEsMTQ5LjUgTDQ1NS4wLDE1My40IEw0NTMuOCwxNTcuMiBMNDUyLjUsMTYwLjggTDQ1MC45LDE2NC4zIEw0NDkuMiwxNjcuNiBMNDQ3LjQsMTcwLjggTDQ0NS40LDE3My45IEw0NDMuMiwxNzYuOSBMNDQwLjksMTc5LjkgTDQzOC40LDE4Mi43IEw0MzUuNywxODUuNCBMNDMyLjksMTg4LjAgTDQzMC4wLDE5MC41IEw0MjYuOCwxOTMuMCBMNDIzLjUsMTk1LjQgTDQyMC4xLDE5Ny42IEw0MTYuNSwxOTkuOCBMNDEyLjcsMjAyLjAgTDQwOC44LDIwNC4wIEw0MDQuNywyMDYuMCBMNDAwLjQsMjA3LjggTDM5Ni4wLDIwOS42IEwzOTEuNCwyMTEuMyBMMzg2LjcsMjEzLjAgTDM4MS43LDIxNC41IEwzNzYuNiwyMTYuMCBMMzcxLjQsMjE3LjQgTDM2NS45LDIxOC43IEwzNjAuMywyMjAuMCBMMzU0LjQsMjIxLjEgTDM0OC40LDIyMi4yIEwzNDIuMiwyMjMuMiBMMzM1LjcsMjI0LjEgTDMyOS4wLDIyNS4wIEwzMjIuMCwyMjUuNyBMMzE0LjgsMjI2LjQgTDMwNy4yLDIyNy4wIEwyOTkuMiwyMjcuNiBMMjkwLjksMjI4LjAgTDI4Mi4wLDIyOC40IEwyNzIuMywyMjguNiBMMjYxLjcsMjI4LjggTDI0OS4zLDIyOS4wIEwyMzAuMCwyMjkuMCBMMjEwLjcsMjI5LjAgTDE5OC4zLDIyOC44IEwxODcuNywyMjguNiBMMTc4LjAsMjI4LjQgTDE2OS4xLDIyOC4wIEwxNjAuOCwyMjcuNiBMMTUyLjgsMjI3LjAgTDE0NS4yLDIyNi40IEwxMzguMCwyMjUuNyBMMTMxLjAsMjI1LjAgTDEyNC4zLDIyNC4xIEwxMTcuOCwyMjMuMiBMMTExLjYsMjIyLjIgTDEwNS42LDIyMS4xIEw5OS43LDIyMC4wIEw5NC4xLDIxOC43IEw4OC42LDIxNy40IEw4My40LDIxNi4wIEw3OC4zLDIxNC41IEw3My4zLDIxMy4wIEw2OC42LDIxMS4zIEw2NC4wLDIwOS42IEw1OS42LDIwNy44IEw1NS4zLDIwNi4wIEw1MS4yLDIwNC4wIEw0Ny4zLDIwMi4wIEw0My41LDE5OS44IEwzOS45LDE5Ny42IEwzNi41LDE5NS40IEwzMy4yLDE5My4wIEwzMC4wLDE5MC41IEwyNy4xLDE4OC4wIEwyNC4zLDE4NS40IEwyMS42LDE4Mi43IEwxOS4xLDE3OS45IEwxNi44LDE3Ni45IEwxNC42LDE3My45IEwxMi42LDE3MC44IEwxMC44LDE2Ny42IEw5LjEsMTY0LjMgTDcuNSwxNjAuOCBMNi4yLDE1Ny4yIEw1LjAsMTUzLjQgTDMuOSwxNDkuNSBMMy4wLDE0NS4zIEwyLjMsMTQwLjkgTDEuNywxMzYuMSBMMS4zLDEzMC44IEwxLjEsMTI0LjYgTDEuMCwxMTUuMCBMMS4xLDEwNS40IEwxLjMsOTkuMiBMMS43LDkzLjkgTDIuMyw4OS4xIEwzLjAsODQuNyBMMy45LDgwLjUgTDUuMCw3Ni42IEw2LjIsNzIuOCBMNy41LDY5LjIgTDkuMSw2NS43IEwxMC44LDYyLjQgTDEyLjYsNTkuMiBMMTQuNiw1Ni4xIEwxNi44LDUzLjEgTDE5LjEsNTAuMSBMMjEuNiw0Ny4zIEwyNC4zLDQ0LjYgTDI3LjEsNDIuMCBMMzAuMCwzOS41IEwzMy4yLDM3LjAgTDM2LjUsMzQuNiBMMzkuOSwzMi40IEw0My41LDMwLjIgTDQ3LjMsMjguMCBMNTEuMiwyNi4wIEw1NS4zLDI0LjAgTDU5LjYsMjIuMiBMNjQuMCwyMC40IEw2OC42LDE4LjcgTDczLjMsMTcuMCBMNzguMywxNS41IEw4My40LDE0LjAgTDg4LjYsMTIuNiBMOTQuMSwxMS4zIEw5OS43LDEwLjAgTDEwNS42LDguOSBMMTExLjYsNy44IEwxMTcuOCw2LjggTDEyNC4zLDUuOSBMMTMxLjAsNS4wIEwxMzguMCw0LjMgTDE0NS4yLDMuNiBMMTUyLjgsMy4wIEwxNjAuOCwyLjQgTDE2OS4xLDIuMCBMMTc4LjAsMS42IEwxODcuNywxLjQgTDE5OC4zLDEuMiBMMjEwLjcsMS4wIEwyMzAuMCwxLjAgTDI0OS4zLDEuMCBMMjYxLjcsMS4yIEwyNzIuMywxLjQgTDI4Mi4wLDEuNiBMMjkwLjksMi4wIEwyOTkuMiwyLjQgTDMwNy4yLDMuMCBMMzE0LjgsMy42IEwzMjIuMCw0LjMgTDMyOS4wLDUuMCBMMzM1LjcsNS45IEwzNDIuMiw2LjggTDM0OC40LDcuOCBMMzU0LjQsOC45IEwzNjAuMywxMC4wIEwzNjUuOSwxMS4zIEwzNzEuNCwxMi42IEwzNzYuNiwxNC4wIEwzODEuNywxNS41IEwzODYuNywxNy4wIEwzOTEuNCwxOC43IEwzOTYuMCwyMC40IEw0MDAuNCwyMi4yIEw0MDQuNywyNC4wIEw0MDguOCwyNi4wIEw0MTIuNywyOC4wIEw0MTYuNSwzMC4yIEw0MjAuMSwzMi40IEw0MjMuNSwzNC42IEw0MjYuOCwzNy4wIEw0MzAuMCwzOS41IEw0MzIuOSw0Mi4wIEw0MzUuNyw0NC42IEw0MzguNCw0Ny4zIEw0NDAuOSw1MC4xIEw0NDMuMiw1My4xIEw0NDUuNCw1Ni4xIEw0NDcuNCw1OS4yIEw0NDkuMiw2Mi40IEw0NTAuOSw2NS43IEw0NTIuNSw2OS4yIEw0NTMuOCw3Mi44IEw0NTUuMCw3Ni42IEw0NTYuMSw4MC41IEw0NTcuMCw4NC43IEw0NTcuNyw4OS4xIEw0NTguMyw5My45IEw0NTguNyw5OS4yIEw0NTguOSwxMDUuNFoiLz48L3N2Zz4=);--v0:98;--v1:144">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num" style="--lx:158.0;--ly:27.3;--fs:17;color:#c2650c">05</span><h2 class="title"><span class="tl" style="--lx:157.5;--ly:47.7;--fs:23.9;--sx:0.9">Korean Traditional</span><span class="tl" style="--lx:157.5;--ly:71.6;--fs:24.44;--sx:0.9">Ceramics</span></h2><span class="t line" style="--lx:158.0;--ly:106.5;--fs:15.75">Timeless Beauty</span><span class="t line" style="--lx:158.0;--ly:125.5;--fs:15.75">Korean Craftsmanship</span><span class="t line" style="--lx:158.0;--ly:143.5;--fs:15.75">Tradition for Today</span>
+        </span>
+        <span class="card-desc" style="--lx:158.0;--ly:106.0;--dw:248.0;--dfs:15">The quiet beauty of the white porcelain moon jar, brought to everyday tableware. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+      <a class="card card--taste" href="better-taste.html" style="--x:1240;--y:682;--w:400;--h:136;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTM2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJNMzk5LjAsNjguMCBMMzk4LjksNzQuNyBMMzk4LjcsNzguNiBMMzk4LjQsODEuOSBMMzk4LjAsODQuOCBMMzk3LjQsODcuNSBMMzk2LjYsODkuOSBMMzk1LjgsOTIuMyBMMzk0LjgsOTQuNSBMMzkzLjcsOTYuNiBMMzkyLjUsOTguNiBMMzkxLjEsMTAwLjYgTDM4OS42LDEwMi40IEwzODcuOSwxMDQuMiBMMzg2LjIsMTA1LjkgTDM4NC4zLDEwNy42IEwzODIuMiwxMDkuMiBMMzgwLjEsMTEwLjcgTDM3Ny44LDExMi4yIEwzNzUuMywxMTMuNiBMMzcyLjgsMTE1LjAgTDM3MC4xLDExNi4zIEwzNjcuMywxMTcuNiBMMzY0LjMsMTE4LjkgTDM2MS4yLDEyMC4wIEwzNTcuOSwxMjEuMiBMMzU0LjYsMTIyLjMgTDM1MS4xLDEyMy4zIEwzNDcuNCwxMjQuMyBMMzQzLjYsMTI1LjMgTDMzOS42LDEyNi4yIEwzMzUuNSwxMjcuMCBMMzMxLjMsMTI3LjkgTDMyNi45LDEyOC42IEwzMjIuMywxMjkuNCBMMzE3LjUsMTMwLjAgTDMxMi42LDEzMC43IEwzMDcuNSwxMzEuMyBMMzAyLjIsMTMxLjggTDI5Ni43LDEzMi4zIEwyOTEuMCwxMzIuOCBMMjg1LjAsMTMzLjIgTDI3OC43LDEzMy42IEwyNzIuMSwxMzMuOSBMMjY1LjIsMTM0LjIgTDI1Ny44LDEzNC40IEwyNDkuOCwxMzQuNiBMMjQxLjIsMTM0LjggTDIzMS40LDEzNC45IEwyMTkuOCwxMzUuMCBMMjAwLjAsMTM1LjAgTDE4MC4yLDEzNS4wIEwxNjguNiwxMzQuOSBMMTU4LjgsMTM0LjggTDE1MC4yLDEzNC42IEwxNDIuMiwxMzQuNCBMMTM0LjgsMTM0LjIgTDEyNy45LDEzMy45IEwxMjEuMywxMzMuNiBMMTE1LjAsMTMzLjIgTDEwOS4wLDEzMi44IEwxMDMuMywxMzIuMyBMOTcuOCwxMzEuOCBMOTIuNSwxMzEuMyBMODcuNCwxMzAuNyBMODIuNSwxMzAuMCBMNzcuNywxMjkuNCBMNzMuMSwxMjguNiBMNjguNywxMjcuOSBMNjQuNSwxMjcuMCBMNjAuNCwxMjYuMiBMNTYuNCwxMjUuMyBMNTIuNiwxMjQuMyBMNDguOSwxMjMuMyBMNDUuNCwxMjIuMyBMNDIuMSwxMjEuMiBMMzguOCwxMjAuMCBMMzUuNywxMTguOSBMMzIuNywxMTcuNiBMMjkuOSwxMTYuMyBMMjcuMiwxMTUuMCBMMjQuNywxMTMuNiBMMjIuMiwxMTIuMiBMMTkuOSwxMTAuNyBMMTcuOCwxMDkuMiBMMTUuNywxMDcuNiBMMTMuOCwxMDUuOSBMMTIuMSwxMDQuMiBMMTAuNCwxMDIuNCBMOC45LDEwMC42IEw3LjUsOTguNiBMNi4zLDk2LjYgTDUuMiw5NC41IEw0LjIsOTIuMyBMMy40LDg5LjkgTDIuNiw4Ny41IEwyLjAsODQuOCBMMS42LDgxLjkgTDEuMyw3OC42IEwxLjEsNzQuNyBMMS4wLDY4LjAgTDEuMSw2MS4zIEwxLjMsNTcuNCBMMS42LDU0LjEgTDIuMCw1MS4yIEwyLjYsNDguNSBMMy40LDQ2LjEgTDQuMiw0My43IEw1LjIsNDEuNSBMNi4zLDM5LjQgTDcuNSwzNy40IEw4LjksMzUuNCBMMTAuNCwzMy42IEwxMi4xLDMxLjggTDEzLjgsMzAuMSBMMTUuNywyOC40IEwxNy44LDI2LjggTDE5LjksMjUuMyBMMjIuMiwyMy44IEwyNC43LDIyLjQgTDI3LjIsMjEuMCBMMjkuOSwxOS43IEwzMi43LDE4LjQgTDM1LjcsMTcuMSBMMzguOCwxNi4wIEw0Mi4xLDE0LjggTDQ1LjQsMTMuNyBMNDguOSwxMi43IEw1Mi42LDExLjcgTDU2LjQsMTAuNyBMNjAuNCw5LjggTDY0LjUsOS4wIEw2OC43LDguMSBMNzMuMSw3LjQgTDc3LjcsNi42IEw4Mi41LDYuMCBMODcuNCw1LjMgTDkyLjUsNC43IEw5Ny44LDQuMiBMMTAzLjMsMy43IEwxMDkuMCwzLjIgTDExNS4wLDIuOCBMMTIxLjMsMi40IEwxMjcuOSwyLjEgTDEzNC44LDEuOCBMMTQyLjIsMS42IEwxNTAuMiwxLjQgTDE1OC44LDEuMiBMMTY4LjYsMS4xIEwxODAuMiwxLjAgTDIwMC4wLDEuMCBMMjE5LjgsMS4wIEwyMzEuNCwxLjEgTDI0MS4yLDEuMiBMMjQ5LjgsMS40IEwyNTcuOCwxLjYgTDI2NS4yLDEuOCBMMjcyLjEsMi4xIEwyNzguNywyLjQgTDI4NS4wLDIuOCBMMjkxLjAsMy4yIEwyOTYuNywzLjcgTDMwMi4yLDQuMiBMMzA3LjUsNC43IEwzMTIuNiw1LjMgTDMxNy41LDYuMCBMMzIyLjMsNi42IEwzMjYuOSw3LjQgTDMzMS4zLDguMSBMMzM1LjUsOS4wIEwzMzkuNiw5LjggTDM0My42LDEwLjcgTDM0Ny40LDExLjcgTDM1MS4xLDEyLjcgTDM1NC42LDEzLjcgTDM1Ny45LDE0LjggTDM2MS4yLDE2LjAgTDM2NC4zLDE3LjEgTDM2Ny4zLDE4LjQgTDM3MC4xLDE5LjcgTDM3Mi44LDIxLjAgTDM3NS4zLDIyLjQgTDM3Ny44LDIzLjggTDM4MC4xLDI1LjMgTDM4Mi4yLDI2LjggTDM4NC4zLDI4LjQgTDM4Ni4yLDMwLjEgTDM4Ny45LDMxLjggTDM4OS42LDMzLjYgTDM5MS4xLDM1LjQgTDM5Mi41LDM3LjQgTDM5My43LDM5LjQgTDM5NC44LDQxLjUgTDM5NS44LDQzLjcgTDM5Ni42LDQ2LjEgTDM5Ny40LDQ4LjUgTDM5OC4wLDUxLjIgTDM5OC40LDU0LjEgTDM5OC43LDU3LjQgTDM5OC45LDYxLjNaIi8+PC9zdmc+);--v0:61;--v1:107">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num" style="--lx:120.0;--ly:11.3;--fs:17;color:#bf640c">06</span><h2 class="title"><span class="tl" style="--lx:120.4;--ly:28.7;--fs:29.35;--sx:0.9">Better Taste</span></h2><span class="t line" style="--lx:121.0;--ly:67.5;--fs:15.35">Safer Food</span><span class="t line" style="--lx:121.0;--ly:85.5;--fs:15.35">Fresher Ingredients</span><span class="t line" style="--lx:121.0;--ly:102.5;--fs:15.35">A More Delicious Life</span>
+        </span>
+        <span class="card-desc" style="--lx:121.0;--ly:67.0;--dw:247.0;--dfs:14">Cleaner water, better vessels and fresher ingredients for food that tastes right. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+      <a class="card card--eco" href="eco-decor.html" aria-label="07 Eco-friendly Decorative Products" style="--x:37;--y:816;--w:1592;--h:108;--mask:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTkyIDEwOCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHBhdGggZD0iTTU0LjAsMSBIMTUzOC4wIEE1My4wLDUzLjAgMCAwIDEgMTUzOC4wLDEwNyBINTQuMCBBNTMuMCw1My4wIDAgMCAxIDU0LjAsMVoiLz48L3N2Zz4=);--v0:359;--v1:405;--v2:1083;--v3:1163">
+        <span class="card-body">
+          <span class="card-shape" aria-hidden="true"><span class="card-img"></span><span class="card-veil"></span></span>
+          <span class="t num eco-number" style="--lx:419;--ly:6;--fs:14;color:#9d641d">07</span><h2 class="title"><span class="tl" style="--lx:418.4;--ly:27;--fs:30;--sx:0.9">Eco-friendly Decorative Products</span></h2><span class="t line sub" style="--lx:419.0;--ly:70.6;--fs:14.9"><span>Eco-friendly Interior Materials</span><i aria-hidden="true">|</i><span>Beautiful Surfaces</span><i aria-hidden="true">|</i><span>Better Living Spaces</span></span>
+        </span>
+        <span class="card-desc" style="--lx:419.0;--ly:69.0;--dw:654.0;--dfs:14.5">Eco-friendly sheets and surfaces for walls, furniture and interiors. <span class="more">Explore<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </section>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="f-brand">
+      <svg class="f-mark" viewBox="-26 -26 52 60" aria-hidden="true"><g fill="#d8b864"><path transform="rotate(45)" d="M0,0 C-2,-4 -11,-6 -11,-13.5 C-11,-19 -4.5,-21 0,-15.5 C4.5,-21 11,-19 11,-13.5 C11,-6 2,-4 0,0Z"/><path transform="rotate(135)" d="M0,0 C-2,-4 -11,-6 -11,-13.5 C-11,-19 -4.5,-21 0,-15.5 C4.5,-21 11,-19 11,-13.5 C11,-6 2,-4 0,0Z"/><path transform="rotate(225)" d="M0,0 C-2,-4 -11,-6 -11,-13.5 C-11,-19 -4.5,-21 0,-15.5 C4.5,-21 11,-19 11,-13.5 C11,-6 2,-4 0,0Z"/><path transform="rotate(315)" d="M0,0 C-2,-4 -11,-6 -11,-13.5 C-11,-19 -4.5,-21 0,-15.5 C4.5,-21 11,-19 11,-13.5 C11,-6 2,-4 0,0Z"/></g><path d="M1 2c2 9 5 17 11 27" fill="none" stroke="#d8b864" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <p class="f-name">Neipclova</p>
+      <p class="f-script">For Our Everyday Life</p>
+    </div>
+    <address class="f-contact">
+      <p><span class="f-label">Phone</span><a href="tel:+8224380287">82-(0)2-438-0287</a></p>
+      <p><span class="f-label">Fax</span><span>82-(0)2-433-0287</span></p>
+      <p><span class="f-label">Address</span><span>Seongsu Academy Tower Suite 1611,<br>118, Seongsui-ro, Seongdong-gu,<br>Seoul, South Korea 04797</span></p>
+      <p><span class="f-label">WhatsApp</span><a href="https://wa.me/821027030217?text=Hello%20Neipclova%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
+    </address>
+    <nav class="f-nav" aria-label="Footer">
+      <a href="about.html">About</a><a href="technology.html">Technology</a><a href="applications.html">Applications</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+      <a class="f-map" href="https://www.google.com/maps/search/?api=1&amp;query=118+Seongsui-ro+Seongdong-gu+Seoul+04797" target="_blank" rel="noopener">Open in Google Maps</a>
+    </nav>
+  </div>
+  <p class="f-copy">© <span class="f-year">2026</span> Neipclova. All rights reserved.</p>
+</footer>
+<script>
+(() => {
+  /* mobile menu */
+  const toggle = document.querySelector('.nav-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+      document.body.classList.toggle('nav-open', !open);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.body.classList.contains('nav-open')) toggle.click();
+    });
+  }
+  /* logo, title and Home link: return to the top of the home page */
+  document.querySelectorAll('[data-home]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (document.body.classList.contains('nav-open') && toggle) toggle.click();
+      const instant = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: instant ? 'auto' : 'smooth' });
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+  const year = document.querySelector('.f-year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  /* living clovers: the clover bed sways gently left and right, row by row */
+  const canvas = document.querySelector('.clover-canvas');
+  if (!canvas || !canvas.getContext) return;
+  const raw = getComputedStyle(document.documentElement).getPropertyValue('--img-base');
+  const m = /url\(\s*(['"]?)([\s\S]*?)\1\s*\)/.exec(raw);
+  if (!m) return;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const SRC = { x: 565, y: 424, w: 540, h: 336 };          // clover bed in design pixels
+  const ELL = { cx: 270, cy: 168, a: 262, b: 160 };          // inner rim of the bowl
+  const ctx = canvas.getContext('2d');
+  const mask = document.createElement('canvas');
+  const img = new Image();
+  let running = false, visible = true, raf = 0, last = 0;
+
+  function buildMask(w, h) {
+    mask.width = w; mask.height = h;
+    const mc = mask.getContext('2d');
+    const sx = w / SRC.w, sy = h / SRC.h;
+    mc.save();
+    mc.translate(ELL.cx * sx, ELL.cy * sy);
+    mc.scale(ELL.a * sx, ELL.b * sy);
+    const g = mc.createRadialGradient(0, 0, 0, 0, 0, 1);
+    g.addColorStop(0, '#000'); g.addColorStop(0.9, '#000'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    mc.fillStyle = g; mc.fillRect(-1, -1, 2, 2);
+    mc.restore();
+  }
+  function resize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const w = Math.max(1, Math.round(canvas.clientWidth * dpr));
+    const h = Math.max(1, Math.round(canvas.clientHeight * dpr));
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w; canvas.height = h; buildMask(w, h);
+    }
+    draw(performance.now());
+  }
+  function draw(now) {
+    if (!img.naturalWidth) return;
+    const t = now / 1000, w = canvas.width, h = canvas.height;
+    const sx = w / SRC.w, sy = h / SRC.h, step = 2, f = img.naturalWidth / 1670;   // source image may be 2x
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.clearRect(0, 0, w, h);
+    for (let y = 0; y < SRC.h; y += step) {
+      const depth = 0.75 + 0.45 * Math.sin(Math.PI * y / SRC.h);
+      const dx = depth * (1.5 * Math.sin(t * 1.05 + y * 0.045)
+                        + 0.9 * Math.sin(t * 0.52 - y * 0.018 + 1.3)
+                        + 0.4 * Math.sin(t * 2.3 + y * 0.12));
+      ctx.drawImage(img, SRC.x * f, (SRC.y + y) * f, SRC.w * f, step * f, dx * sx, y * sy, w, step * sy + 1);
+    }
+    ctx.globalCompositeOperation = 'destination-in';
+    ctx.drawImage(mask, 0, 0);
+    ctx.globalCompositeOperation = 'source-over';
+  }
+  function frame(now) {
+    raf = requestAnimationFrame(frame);
+    if (now - last < 33) return;                               // ~30 fps is plenty
+    last = now; draw(now);
+  }
+  function start() {
+    if (running || reduce.matches || !visible || document.hidden || !img.naturalWidth) return;
+    running = true; raf = requestAnimationFrame(frame);
+  }
+  function stop() { running = false; cancelAnimationFrame(raf); }
+
+  img.onload = () => { resize(); start(); };
+  img.src = m[2];
+  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(canvas);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => { visible = entries[0].isIntersecting; visible ? start() : stop(); }).observe(canvas);
+  }
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+  if (reduce.addEventListener) reduce.addEventListener('change', () => (reduce.matches ? stop() : start()));
+})();
+
+</script>
+<div id="waterPortal" aria-hidden="true"><div class="portalRing"></div><div class="portalWash"></div></div><script src="water-transition.js"></script><div id="energyPortal" aria-hidden="true"><span class="energyEntryRing"></span><span class="energyEntryRing energyEntryRingSecond"></span><span class="energyEntryWash"></span></div><script src="energy-transition.js?v=2"></script><div id="farmPortal" aria-hidden="true"></div><script src="farm-transition.js?v=1"></script><div id="wellnessPulseLayer" aria-hidden="true"></div><script src="wellness-motion.js?v=3"></script><div id="ceramicsPulseLayer" aria-hidden="true"></div><script src="ceramics-motion.js?v=1"></script><div id="tastePulseLayer" aria-hidden="true"></div><script src="taste-motion.js?v=1"></script><div id="decorPulseLayer" aria-hidden="true"></div><script src="decor-motion.js"></script></body>
+</html>
